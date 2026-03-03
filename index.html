@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seemann Group - Logística Internacional</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- LinkedIn Insight Tag -->
+    <script type="text/javascript">
+      window._linkedin_partner_id = "9625241";
+      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+      window._linkedin_data_partner_ids.push(window._linkedin_partner_id);
+      // Debug: confirmar que este script se ejecutó
+      try { console.info('[LinkedIn] index head initialized', window._linkedin_partner_id); } catch(e) {}
+    </script>
+    <script type="text/javascript">
+      (function(l) {
+        if (!l){
+          window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+          window.lintrk.q=[];
+        }
+        // Exponer un identificador global `lintrk` para permitir llamadas directas desde consola
+        try { var lintrk = window.lintrk; } catch(e) { /* ignore */ }
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+      })(window.lintrk);
+    </script>
+  </head>
+  <body>
+    <!-- LinkedIn Insight Tag - noscript fallback -->
+    <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9625241&fmt=gif" />
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

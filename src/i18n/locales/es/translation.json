@@ -1,0 +1,1130 @@
+{
+  "navbar": {
+    "services": "Servicios",
+    "ourCompany": "Nuestra empresa",
+    "history": "Nuestra Historia",
+    "photos": "Nuestra Experiencia",
+    "offices": "Nuestras Oficinas",
+    "network": "Nuestro Equipo",
+    "tools": "Herramientas",
+    "newClients": "Clientes Nuevos",
+    "contact": "Contacto",
+    "clientPortal": "Portal Clientes",
+    "blog": "Blog",
+    "tracking": "Tracking",
+    "cotizacion": "Cotizaciones",
+    "pricing": "Tarifario",
+    "reclamos": "Reclamos",
+    "viewAllServices": "Ver todos los servicios"
+  },
+  "hero": {
+    "welcome": "Conectamos tu negocio con el mundo",
+    "newClientSubtitle": "35+ años moviendo más que carga: movemos confianza",
+    "newClientBtn": "Nuevo Cliente",
+    "quoteTitle": "Soluciones logísticas que impulsan tu negocio",
+    "quoteBtn": "Cotizar Ahora",
+    "experience": "Experiencia comprobada en logística internacional",
+    "globalNetwork": "Tu socio logístico global",
+    "networkDesc": "Red propia en 5 países con 8 alianzas estratégicas internacionales",
+    "ctaQuote": "Cotizar Ahora",
+    "ctaCoverage": "Ver Cobertura",
+    "clientPortalMessage": "Si eres un cliente de Seemann, entra al",
+    "clientPortal": "Portal de Clientes",
+    "quoteNow": "para Cotizar Ahora",
+    "saveTime": "Ahorra Tiempo, Optimiza tu Logística",
+    "saveTimeDescription": "Con Seemann Group, ganas velocidad y eficiencia en cada envío. Nuestro equipo gestiona cada detalle para que tú te enfoques en crecer.",
+    "clientMessage": "¿Ya eres cliente?",
+    "clientPortalMessage2": "Accede al",
+    "toQuote": "para cotizar y rastrear tus envíos en tiempo real"
+  },
+  "stats": {
+    "clients": "Clientes Activos",
+    "countries": "Países",
+    "shipments": "Envíos Anuales",
+    "alliances": "Alianzas Globales"
+  },
+  "value": {
+    "mainTitle": "Ahorra tiempo en cada envío: ese es nuestro diferenciador",
+    "subtitle": "Por qué Seemann Group te hace ganar velocidad y eficiencia",
+    "global": {
+      "title": "Red Global Propia",
+      "desc": "Presencia directa en 5 países: menos intermediarios, más rapidez"
+    },
+    "anticipate": {
+      "title": "Te Ahorramos Tiempo Crítico",
+      "desc": "Anticipamos problemas documentales y aduaneros antes que retrasen tu carga. Tu tiempo es valioso."
+    },
+    "experience": {
+      "title": "35+ Años Optimizando Tiempos",
+      "desc": "Rutas probadas, procesos automatizados y soluciones express cuando las necesitas"
+    },
+    "support": {
+      "title": "Respuesta Rápida 24/7",
+      "desc": "Atención inmediata en cualquier momento: resolvemos urgencias sin esperas"
+    }
+  },
+  "tracking": {
+    "badge": "TRACKING 24/7",
+    "title": "Rastrea tu carga en tiempo real",
+    "subtitle": "Ingresa tu número de seguimiento y conoce el estado de tu envío al instante",
+    "placeholder": "Ej: SG123456789",
+    "button": "Rastrear",
+    "feature1": "Estado Actual",
+    "feature1Desc": "Información en tiempo real",
+    "feature2": "Ubicación Exacta",
+    "feature2Desc": "GPS tracking 24/7",
+    "feature3": "ETA Preciso",
+    "feature3Desc": "Fecha estimada de llegada"
+  },
+  "timeSaving": {
+    "mainTitle": "Tu Tiempo es Oro: Nosotros lo Cuidamos",
+    "subtitle": "Cada minuto cuenta en logística. Por eso optimizamos procesos, automatizamos gestiones y te damos tranquilidad total.",
+    "subtitleService": "Cada minuto cuenta. Por eso optimizamos procesos, automatizamos gestiones y te damos la tranquilidad de saber que tu carga avanza sin demoras.",
+    "fast": {
+      "title": "Procesamiento Rápido",
+      "desc": "Reducimos tiempos de gestión hasta en 50%"
+    },
+    "automation": {
+      "title": "Automatización",
+      "desc": "Sistemas digitales que eliminan esperas innecesarias"
+    },
+    "efficiency": {
+      "title": "Máxima Eficiencia",
+      "desc": "Optimizamos cada etapa del proceso logístico"
+    },
+    "experience": {
+      "title": "Experiencia Probada",
+      "desc": "35+ años perfeccionando rutas y procesos"
+    },
+    "ctaTitle": "¿Cuánto tiempo podrías ahorrar con Seemann?",
+    "ctaDesc": "Nuestros clientes reportan hasta 50% de reducción en tiempos de gestión. Habla con un ejecutivo y descubre cómo.",
+    "ctaButton": "Hablar con un Ejecutivo"
+  },
+  "testimonials": {
+    "badge": "TESTIMONIOS",
+    "title": "Lo que nuestros clientes dicen",
+    "subtitle": "Más de 100 empresas confían en nosotros para sus operaciones logísticas",
+    "comingSoon": "Testimonios Próximamente",
+    "comingSoonDesc": "Estamos recopilando testimonios de nuestros clientes satisfechos. Pronto compartiremos sus experiencias trabajando con Seemann Group.",
+    "client1": "Seemann Group ha sido clave en nuestra expansión internacional. Su red en 5 países y respuesta rápida nos permite operar con confianza.",
+    "client1Position": "Director de Operaciones",
+    "client2": "La transparencia en el tracking y la gestión aduanera impecable hacen de Seemann nuestro socio logístico de confianza desde hace 8 años.",
+    "client2Position": "Gerente Logística",
+    "client3": "Necesitábamos un partner que entendiera transporte refrigerado. Seemann cumplió cada promesa. Envíos perfectos, tiempos exactos.",
+    "client3Position": "CEO",
+    "stat1": "Satisfacción del Cliente",
+    "stat2": "Clientes Activos",
+    "stat3": "Años de Experiencia"
+  },
+  "cta": {
+    "title": "¿Listo para optimizar tu logística?",
+    "subtitle": "Contáctanos y descubre cómo podemos ayudarte",
+    "quote": "Solicitar Cotización",
+    "contact": "Contáctanos"
+  },
+  "industries": {
+    "title": "Soluciones para tu industria",
+    "subtitle": "Experiencia especializada en múltiples sectores",
+    "wine": "Vinos & Bebidas",
+    "wineDesc": "Transporte refrigerado y certificado",
+    "machinery": "Maquinaria",
+    "machineryDesc": "Proyectos y carga sobredimensionada",
+    "construction": "Construcción",
+    "constructionDesc": "Break bulk y carga de proyecto",
+    "ecommerce": "E-commerce",
+    "ecommerceDesc": "Entregas rápidas y tracking 24/7"
+  },
+  "servicePages": {
+    "airTransport": {
+      "hero": {
+        "title": "Transporte Aéreo: Velocidad, Trazabilidad y Flexibilidad",
+        "subtitle": "Reducción de tiempos de tránsito mediante rutas optimizadas y control en tiempo real. Soluciones para carga general, DG, pharma y project cargo."
+      },
+      "features": {
+        "feature1": {
+          "title": "Respuesta en 24h",
+          "description": "Confirmación de ruta y tarifa en tiempo récord para optimizar tu cadena de suministro"
+        },
+        "feature2": {
+          "title": "Tracking 24/7",
+          "description": "Visibilidad completa por AWB en cada etapa del proceso con actualizaciones en tiempo real"
+        },
+        "feature3": {
+          "title": "Soluciones especializadas",
+          "description": "Manejo certificado DG, Pharma y temperatura controlada con cumplimiento normativo"
+        }
+      },
+      "whyChoose": {
+        "title": "¿Por qué elegir nuestro servicio aéreo?",
+        "p1": "Dada la naturaleza del transporte aéreo, donde el plazo de entrega resulta ser el factor fundamental, nuestro servicio se caracteriza por una oportuna y proactiva gestión de las operaciones.",
+        "p2": "Analizamos diversas opciones de embarque, garantizando una mayor frecuencia de salida y flexibilidad en el tránsito, que nos permitirá obtener un menor tiempo de tránsito, garantizando el éxito de los negocios en los cuales nos involucramos.",
+        "p3": "Dado que nuestra propuesta se basa en la individualización de los clientes, nuestro servicio siempre buscará y presentará alternativas para los tránsitos, que permita el establecimiento de soluciones adaptadas a cada una las distintas realidades de las diversas industrias."
+      },
+      "processTitle": "Nuestro proceso de trabajo",
+      "process": {
+        "step1": {
+          "title": "Cotización",
+          "description": "Solicitud de tarifa con análisis de rutas y opciones de tránsito",
+          "duration": "24 horas"
+        },
+        "step2": {
+          "title": "Planificación",
+          "description": "Coordinación de recolección, booking y documentación requerida",
+          "duration": "48-72 horas"
+        },
+        "step3": {
+          "title": "Ejecución",
+          "description": "Embarque, tránsito con tracking 24/7 y gestión proactiva",
+          "duration": "Variable según ruta"
+        },
+        "step4": {
+          "title": "Entrega",
+          "description": "Desaduanaje, última milla y feedback post-operación",
+          "duration": "24-48 horas"
+        }
+      },
+      "servicesTitle": "Servicios que ofrecemos en transporte aéreo",
+      "services": {
+        "service1": {
+          "title": "Carga General / General Cargo",
+          "description": "Gestión completa de envíos comerciales con rutas optimizadas y frecuencias flexibles. Ideal para mercancía estándar que requiere tiempos de tránsito reducidos."
+        },
+        "service2": {
+          "title": "Carga Peligrosa / Dangerous Goods (DG Shipments)",
+          "description": "Manejo certificado de mercancías peligrosas con personal capacitado según normativas IATA. Cumplimiento estricto de regulaciones internacionales."
+        },
+        "service3": {
+          "title": "Carga Proyecto / Project Cargo",
+          "description": "Soluciones para carga sobredimensionada y fuera de medida (oversize & out-of-gauge). Planificación detallada y coordinación multiequipo."
+        },
+        "service4": {
+          "title": "Carga en Tránsito / Bonded Cargo",
+          "description": "Gestión de carga bajo régimen de tránsito aduanero sin nacionalización. Optimización de tiempos y costos en operaciones multi-país."
+        },
+        "service5": {
+          "title": "Just-in-Time (JIT)",
+          "description": "Operaciones sincronizadas con tu línea de producción. Entregas precisas que evitan costos de almacenaje y optimizan capital de trabajo."
+        },
+        "service6": {
+          "title": "Carga Perecedera / Pharmaceutical & Reefer",
+          "description": "Transporte de productos farmacéuticos y perecederos con control de temperatura validado. Cadena de frío certificada."
+        },
+        "service7": {
+          "title": "Charter / Vuelos Dedicados",
+          "description": "Vuelos exclusivos para cargas críticas que requieren salida inmediata. Máxima flexibilidad y control total del proceso."
+        },
+        "service8": {
+          "title": "Courier Internacional",
+          "description": "Entregas rápidas puerta a puerta para documentos y paquetes pequeños. Ideal para muestras, contratos y envíos urgentes."
+        }
+      },
+      "stats": {
+        "title": "35+ años conectando el mundo",
+        "stat1": { "value": "+100", "label": "Destinos Globales" },
+        "stat2": { "value": "+10K", "label": "Envíos Anuales" },
+        "stat3": { "value": "98%", "label": "On-time Delivery" }
+      },
+      "faqs": [
+        {
+          "question": "¿Qué tipos de cargas admite el servicio aéreo?",
+          "answer": "Admitimos todo tipo de carga: general cargo, mercancías peligrosas (DG) con certificación IATA, productos farmacéuticos con control de temperatura, carga proyecto (oversize), y carga perecedera. Cada tipo requiere documentación específica y cumplimiento de regulaciones internacionales."
+        },
+        {
+          "question": "¿Cuánto tarda un envío aéreo típico entre Asia y Sudamérica?",
+          "answer": "El tiempo de tránsito directo es de 2-4 días dependiendo del origen/destino específico. Rutas con conexión pueden tomar 5-7 días. Esto incluye vuelo, conexiones, y desaduanaje. Ofrecemos opciones express con vuelos directos para reducciones de hasta 50% del tiempo estándar."
+        },
+        {
+          "question": "¿Ofrecen manejo de mercancías peligrosas?",
+          "answer": "Sí, contamos con certificación y personal capacitado para manejo de DG según IATA. Manejamos baterías de litio, productos químicos clasificados UN, materiales inflamables y corrosivos. Incluimos asesoría en embalaje, etiquetado y documentación DGD (Dangerous Goods Declaration)."
+        },
+        {
+          "question": "¿Cómo funciona el seguimiento en tiempo real?",
+          "answer": "A través de nuestro portal Portal de Clientes accedes a tu panel personalizado con ubicación GPS por etapas, documentos digitales (AWB, Invoice, Packing List), notificaciones automáticas en hitos clave, y reportes de performance. Disponible 24/7 desde cualquier dispositivo."
+        },
+        {
+          "question": "¿Qué documentación debo preparar para exportar vía aérea?",
+          "answer": "Documentos básicos: Invoice comercial, Packing List, y Certificado de Origen (si aplica). Para DG: DGD y MSDS. Para productos regulados: permisos sanitarios, fitosanitarios, o autorizaciones específicas. Nuestro equipo te asesora en cada requisito según origen/destino y tipo de mercancía."
+        },
+        {
+          "question": "¿Qué ventajas ofrece el servicio Just-in-Time?",
+          "answer": "El servicio JIT elimina costos de almacenaje, reduce capital inmovilizado en inventario, y sincroniza entregas con tu producción. Coordinamos con tus sistemas ERP/WMS para entregas programadas con precisión de horas, ideal para industria automotriz, minera y farmacéutica."
+        },
+        {
+          "question": "¿Ofrecen vuelos charter o dedicados?",
+          "answer": "Sí, para cargas críticas que requieren salida inmediata (emergencias mineras, equipamiento médico urgente, proyectos con deadlines no negociables) gestionamos charters dedicados. Cotización de disponibilidad en menos de 4 horas, con máxima flexibilidad de ruta y horario."
+        }
+      ],
+      "cta": {
+        "title": "¿Listo para optimizar tus envíos aéreos?",
+        "subtitle": "Obtén una cotización personalizada y descubre cómo podemos reducir tus tiempos de tránsito",
+        "btnPrimary": "Solicitar cotización",
+        "btnSecondary": "Hablar con un experto"
+      }
+    },
+    "seaTransport": {
+      "hero": {
+        "title": "Transporte Marítimo: Capacidad y Economía en Océanos",
+        "subtitle": "Negociación directa con navieras para tarifas competitivas y mejores condiciones: días libres, drop-off específico y emisión oportuna de documentos."
+      },
+      "features": {
+        "feature1": {
+          "title": "Tarifas competitivas",
+          "description": "Negociación directa con navieras para obtener las mejores condiciones comerciales y días libres"
+        },
+        "feature2": {
+          "title": "Cobertura mundial",
+          "description": "Posicionamiento en puertos principales y secundarios con agentes certificados"
+        },
+        "feature3": {
+          "title": "FCL y LCL",
+          "description": "Soluciones para contenedores completos y carga consolidada con máxima flexibilidad"
+        }
+      },
+      "whyChoose": {
+        "title": "Eficacia y optimización de recursos",
+        "p1": "Los mercados hoy en día buscan el transporte marítimo por la fuerte vocación de obtener eficacia en las operaciones, buscando optimizar los recursos involucrados en cada una de éstas.",
+        "p2": "Nuestra empresa se compromete a una fuerte negociación sobre los contratos de transporte marítimo, buscando alcanzar no sólo la tarifa más competitiva, sino también el otorgar las mejores condiciones para este tipo de operaciones en tópicos tales como días libres en destino, drop off en puntos específicos, emisión de documentos en destino de manera oportuna, etc.",
+        "p3": "Nuestra cobertura a nivel mundial nos ha permitido establecer posiciones en cada uno de los puertos de embarque o destino que se nos solicite, estableciendo un servicio tanto para full container, como carga consolidada."
+      },
+      "processTitle": "Proceso de transporte marítimo",
+      "process": {
+        "step1": {
+          "title": "Cotización",
+          "description": "Análisis de ruta, naviera y condiciones comerciales",
+          "duration": "24-48 horas"
+        },
+        "step2": {
+          "title": "Booking",
+          "description": "Reserva de espacio, coordinación de recolección y documentación",
+          "duration": "2-5 días"
+        },
+        "step3": {
+          "title": "Embarque",
+          "description": "Stuffing, emisión BL, tracking durante tránsito marítimo",
+          "duration": "15-45 días según ruta"
+        },
+        "step4": {
+          "title": "Desaduanaje",
+          "description": "Arribo a puerto, despacho aduanero y entrega final",
+          "duration": "3-7 días"
+        }
+      },
+      "servicesTitle": "Servicios que ofrecemos en transporte marítimo",
+      "services": {
+        "service1": {
+          "title": "Full Container Load (FCL)",
+          "description": "Servicio de contenedor completo (20', 40', 40' HC, 45') con reserva directa en navieras principales. Ideal para volúmenes consolidados."
+        },
+        "service2": {
+          "title": "Less Container Load (LCL) / Carga Consolidada",
+          "description": "Consolidación de carga para volúmenes menores a un contenedor completo. Salidas semanales en rutas principales."
+        },
+        "service3": {
+          "title": "Roll-on/Roll-off (RoRo)",
+          "description": "Transporte de vehículos y maquinaria rodante. Carga y descarga sin grúas mediante rampas especializadas."
+        },
+        "service4": {
+          "title": "Break Bulk (BB) / Carga Proyecto",
+          "description": "Manejo de carga suelta no containerizable. Soluciones para project cargo y cargas fuera de medida estándar."
+        },
+        "service5": {
+          "title": "Cargas en Tránsito / Bonded Cargo",
+          "description": "Gestión de mercancía bajo régimen de tránsito aduanero internacional. Operaciones multi-país sin nacionalización intermedia."
+        },
+        "service6": {
+          "title": "Full Container Reefer / Contenedores Refrigerados",
+          "description": "Transporte de carga que requiere temperatura controlada. Monitoreo continuo durante todo el tránsito marítimo."
+        }
+      },
+      "stats": {
+        "title": "Líderes en transporte marítimo",
+        "stat1": { "value": "+50", "label": "Puertos Operativos" },
+        "stat2": { "value": "15K+", "label": "TEUs Anuales" },
+        "stat3": { "value": "20+", "label": "Navieras Partners" },
+        "stat4": { "value": "97%", "label": "On-time Arrivals" }
+      },
+      "faqs": [
+        {
+          "question": "¿Qué diferencia hay entre FCL y LCL?",
+          "answer": "FCL (Full Container Load) es cuando reservas un contenedor completo para tu carga (20' o 40'). LCL (Less Container Load) es cuando tu carga no llena un contenedor completo, por lo que se consolida con carga de otros clientes. FCL es más económico para volúmenes grandes (+15m³), mientras que LCL es ideal para cargas pequeñas (1-14m³)."
+        },
+        {
+          "question": "¿Cuánto tarda un envío marítimo entre Asia y Sudamérica?",
+          "answer": "Ruta China-Chile (puerto a puerto): 28-35 días típicamente. Rutas con transbordo pueden tomar 35-45 días. El tiempo total incluye tránsito marítimo, posibles transbordos, y desaduanaje. Ofrecemos servicios directos y con conexión según disponibilidad de navieras y optimización de costos."
+        },
+        {
+          "question": "¿Qué documentos necesito para exportar/importar vía marítima?",
+          "answer": "Documentos esenciales: Invoice Comercial, Packing List, Bill of Lading (BL), Certificado de Origen (si aplica SGP/TLC). Para productos regulados: permisos sanitarios, fitosanitarios, registro de importador. Nuestro equipo verifica y gestiona toda la documentación pre-embarque."
+        },
+        {
+          "question": "¿Ofrecen servicio de consolidación y desconsolidación?",
+          "answer": "Sí, contamos con almacenes en puertos clave (Shanghai, Los Angeles, Valparaíso, Callao) donde consolidamos múltiples proveedores en origen y desconsolidamos para distribución en destino. Incluye inspección de carga, repacking si necesario, y coordinación de última milla."
+        },
+        {
+          "question": "¿Qué incluye el servicio de transporte marítimo?",
+          "answer": "Servicio integral: negociación de tarifa con naviera, booking de espacio, coordinación de recolección, emisión de BL, tracking 24/7, desaduanaje en destino, y entrega final. También gestionamos días libres en puerto, drop-off en puntos específicos, y seguros de carga."
+        },
+        {
+          "question": "¿Manejan carga refrigerada (Reefer)?",
+          "answer": "Sí, ofrecemos contenedores Reefer 20' y 40' HC con control de temperatura -25°C a +25°C. Monitoreo continuo con data loggers, certificación ATP/FEU, y coordinación de plug-in en puerto. Ideal para pharma, alimentos congelados, flores y productos del mar."
+        },
+        {
+          "question": "¿Qué es el servicio Break Bulk y cuándo se usa?",
+          "answer": "Break Bulk es para carga que no cabe en contenedor estándar: maquinaria industrial, estructuras metálicas, componentes de plantas. Incluye estudio de estiba, plan de trincado, coordinación de grúas especializadas, y gestión de permisos para carga sobredimensionada."
+        }
+      ],
+      "cta": {
+        "title": "¿Listo para optimizar tus envíos marítimos?",
+        "subtitle": "Obtén tarifas competitivas y mejores condiciones comerciales con nuestro equipo",
+        "btnPrimary": "Solicitar cotización",
+        "btnSecondary": "Hablar con un experto"
+      }
+    },
+    "landTransport": {
+      "hero": {
+        "title": "Transporte Terrestre: Conectando Destinos Continentales",
+        "subtitle": "Alianzas estratégicas con transportistas certificados para recogida y despacho con servicio rápido, seguro y tracking en tiempo real."
+      },
+      "features": {
+        "feature1": { "title": "Cobertura regional", "description": "Alianzas estratégicas con transportistas locales en toda Sudamérica y Norteamérica" },
+        "feature2": { "title": "Carga segura", "description": "Vehículos equipados con GPS, seguros de carga y protocolos de seguridad certificados" },
+        "feature3": { "title": "Entrega oportuna", "description": "Monitoreo en tiempo real y coordinación proactiva para cumplir tus deadlines" }
+      },
+      "whyChoose": {
+        "title": "Servicio rápido y seguro",
+        "p1": "En vista que varios de los incoterms actualmente utilizados en los procesos de compra y venta de comercio exterior involucran el tránsito terrestre, hemos realizado alianzas con las diversas empresas a nivel internacional.",
+        "p2": "Esto nos permite entregarles los servicios de recogida y/o despacho de sus operaciones, a través de un servicio rápido y seguro, que velará no sólo por la entrega de la carga de forma oportuna, sino también unas óptimas condiciones en la cual se realizará la misma.",
+        "p3": "Todas nuestras alianzas cuentan con tracking GPS, seguros de carga certificados y protocolos de seguridad que garantizan la integridad de tu mercancía durante todo el tránsito."
+      },
+      "processTitle": "Proceso de transporte terrestre",
+      "process": {
+        "step1": { "title": "Cotización", "description": "Análisis de ruta, tipo de vehículo y condiciones de carga", "duration": "12-24 horas" },
+        "step2": { "title": "Coordinación", "description": "Programación de recolección y preparación de documentación", "duration": "24-48 horas" },
+        "step3": { "title": "Transporte", "description": "Recolección, tránsito con GPS tracking y gestión proactiva", "duration": "Variable según distancia" },
+        "step4": { "title": "Entrega", "description": "Descarga en destino final y POD (Proof of Delivery)", "duration": "Según coordinación" }
+      },
+      "servicesTitle": "Servicios que ofrecemos en transporte terrestre",
+      "services": {
+        "service1": { "title": "Less than Truck Load (LTL)", "description": "Servicio de carga parcial para volúmenes que no requieren un camión completo. Ideal para envíos regulares de menor tamaño." },
+        "service2": { "title": "Full Truck Load (FTL)", "description": "Camión completo dedicado para tu carga. Máxima velocidad y seguridad sin consolidación con terceros." },
+        "service3": { "title": "Roll-on/Roll-off (RoRo)", "description": "Transporte terrestre de vehículos y maquinaria rodante. Carga mediante conducción sin necesidad de grúas." },
+        "service4": { "title": "Break Bulk (BB) / Carga Proyecto", "description": "Transporte de carga suelta no containerizada que requiere manejo especializado y planificación detallada." },
+        "service5": { "title": "Cargas en Tránsito / Bonded Cargo", "description": "Gestión de mercancía en régimen de tránsito internacional terrestre. Operaciones cross-border optimizadas." }
+      },
+      "stats": {
+        "title": "Red terrestre regional",
+        "stat1": { "value": "7", "label": "Países Operativos" },
+        "stat2": { "value": "8K+", "label": "Envíos Anuales" },
+        "stat3": { "value": "50+", "label": "Transportistas Partners" },
+        "stat4": { "value": "96%", "label": "On-time Delivery" }
+      },
+      "faqs": [
+        { "question": "¿Qué diferencia hay entre LTL y FTL?", "answer": "LTL (Less than Truck Load) es cuando tu carga no llena un camión completo, por lo que se consolida con otros clientes. FTL (Full Truck Load) es un camión dedicado solo para tu carga. FTL es más rápido (sin paradas intermedias) y seguro, ideal para +10 toneladas. LTL es más económico para volúmenes pequeños." },
+        { "question": "¿Qué cobertura geográfica tienen?", "answer": "Cobertura completa en Chile, Perú, Argentina, Bolivia, Paraguay, Uruguay y Brasil mediante alianzas con transportistas certificados. También gestionamos rutas México-USA y Centroamérica. Cada aliado cumple nuestros estándares de seguridad, GPS tracking y seguros de carga." },
+        { "question": "¿Ofrecen seguimiento GPS en tiempo real?", "answer": "Sí, todos nuestros transportes cuentan con GPS tracking que puedes consultar en tu portal Portal de Clientes. Actualizaciones cada 30 minutos durante el tránsito, alertas en puntos clave (frontera, aduana, entrega), y notificaciones automáticas vía email/SMS." },
+        { "question": "¿Qué documentación se requiere para transporte terrestre internacional?", "answer": "Documentos básicos: Invoice Comercial, Packing List, DTA (Declaración de Tránsito Aduanero), Carta Porte CMR/CRT. Para productos regulados: certificados sanitarios, fitosanitarios, permisos especiales. Nuestro equipo gestiona toda la documentación pre-embarque." },
+        { "question": "¿Cómo manejan las cargas sobredimensionadas?", "answer": "Para carga sobredimensionada (maquinaria, estructuras) gestionamos permisos de circulación, escoltas obligatorias, restricciones horarias, y coordinación con autoridades de tránsito. Evaluamos rutas, puentes y altura de cables para garantizar tránsito seguro. Incluye seguro de carga todo riesgo." },
+        { "question": "¿Qué seguro de carga incluye el servicio?", "answer": "Nuestros transportistas tienen seguro de responsabilidad civil obligatorio. Para cargas de alto valor ofrecemos seguro todo riesgo adicional (robo, daño, accidente) con cobertura según valor declarado. Prima calculada según mercancía, ruta y condiciones específicas." },
+        { "question": "¿Cuánto tarda un envío terrestre típico?", "answer": "Depende de la ruta: Santiago-Valparaíso (mismo día), Santiago-Buenos Aires (3-4 días), Santiago-Lima (4-5 días), Santiago-São Paulo (7-10 días). Tiempos incluyen tránsito, pasos fronterizos y aduanas. Ofrecemos servicio express con prioridad en fronteras." }
+      ],
+      "cta": { "title": "¿Listo para optimizar tu logística terrestre?", "subtitle": "Obtén una cotización y descubre nuestras rutas y tiempos de entrega", "btnPrimary": "Solicitar cotización", "btnSecondary": "Hablar con un experto" }
+    },
+    "warehouse": {
+      "hero": {
+        "title": "Warehouse & Fulfillment: Almacenaje Estratégico 24/7",
+        "subtitle": "Control de inventario en tiempo real, servicios 4PL y fulfillment para generar ventajas competitivas en tu industria."
+      },
+      "features": {
+        "feature1": { "title": "Almacenaje estratégico", "description": "Ubicaciones en puertos y aeropuertos clave con acceso 24/7 y seguridad perimetral" },
+        "feature2": { "title": "Control de inventario", "description": "WMS (Warehouse Management System) con visibilidad en tiempo real de tu stock" },
+        "feature3": { "title": "Pick & Pack", "description": "Servicios de fulfillment, repacking e inspección de mercancía" }
+      },
+      "whyChoose": {
+        "title": "Ventajas competitivas mediante gestión logística",
+        "p1": "Actualmente contamos con una amplia cobertura de warehouse a nivel mundial, que le otorgará a nuestros clientes la capacidad de almacenar y consolidar carga en los diversos puertos y/o aeropuertos, con el objetivo de optimizar cada logística.",
+        "p2": "Seemann ofrece la posibilidad de establecer una administración de inventarios en nuestros almacenes, permitiendo entregar servicios de 4PL, permitiendo generar ventajas competitivas a nuestros clientes en sus respectivas industrias.",
+        "p3": "Nuestro sistema WMS te permite visibilidad en tiempo real de tu stock, con reportes automatizados, alertas de reposición y dashboards personalizados para toma de decisiones informada."
+      },
+      "processTitle": "Proceso de warehouse & fulfillment",
+      "process": {
+        "step1": { "title": "Cotización", "description": "Análisis de volumetría, tipo de carga y servicios requeridos", "duration": "24 horas" },
+        "step2": { "title": "Recepción", "description": "Arribo a warehouse, inspección de entrada y registro en WMS", "duration": "24-48 horas" },
+        "step3": { "title": "Almacenaje", "description": "Ubicación, control de inventario y servicios value-added", "duration": "Según necesidad" },
+        "step4": { "title": "Despacho", "description": "Picking, packing, carga y coordinación de entrega", "duration": "24-48 horas" }
+      },
+      "servicesTitle": "Servicios que ofrecemos en warehouse",
+      "services": {
+        "service1": { "title": "Almacenaje de mercancía", "description": "Espacios seguros en almacenes estratégicamente ubicados cerca de puertos y aeropuertos principales. Tarifas por m³ o pallet según volumen." },
+        "service2": { "title": "Control de inventario / WMS", "description": "Sistema de gestión de almacén (WMS) integrado con tu ERP. Visibilidad completa de entradas, salidas y stock disponible." },
+        "service3": { "title": "Inspección de mercancía", "description": "Verificación física de cantidad, calidad y condiciones de empaque pre-embarque o post-arribo." },
+        "service4": { "title": "Repacking / Reembalaje", "description": "Servicios de reacondicionamiento de carga, cambio de embalaje o consolidación de múltiples proveedores." },
+        "service5": { "title": "Servicios 4PL / Fulfillment", "description": "Gestión integral de tu cadena de suministro. Administramos inventarios, órdenes, picking, packing y distribución." }
+      },
+      "stats": {
+        "title": "Infraestructura logística global",
+        "stat1": { "value": "15+", "label": "Warehouses Globales" },
+        "stat2": { "value": "50K+", "label": "m² Almacenaje" },
+        "stat3": { "value": "99.8%", "label": "Accuracy Rate" },
+        "stat4": { "value": "24/7", "label": "Operación Continua" }
+      },
+      "faqs": [
+        { "question": "¿En qué ubicaciones tienen almacenes?", "answer": "Contamos con almacenes propios y aliados en puertos/aeropuertos clave: Valparaíso, San Antonio (Chile), Callao (Perú), Buenos Aires (Argentina), Los Angeles, Miami (USA), Shanghai, Ningbo (China). Todos con certificación ISO, seguridad 24/7 y WMS integrado." },
+        { "question": "¿Cómo se cobra el almacenaje?", "answer": "Tarifa por m³ o por pallet según volumen y tiempo de estadía. Primeros 7-15 días suelen estar incluidos en flete marítimo (free time). Después se cobra por día o semana. Para contratos de largo plazo (+3 meses) ofrecemos tarifas preferenciales con servicios 4PL incluidos." },
+        { "question": "¿Puedo ver mi inventario en tiempo real?", "answer": "Sí, a través de tu portal Portal de Clientes accedes a dashboard con inventario actualizado en tiempo real: stock disponible, ubicación física en warehouse, entradas/salidas, aging de mercancía, y reportes personalizados. Integración API disponible para conectar con tu ERP." },
+        { "question": "¿Ofrecen servicios de fulfillment para e-commerce?", "answer": "Sí, ofrecemos servicios 4PL completos: recepción de inventario, almacenaje, picking & packing según órdenes, integración con Shopify/WooCommerce/Mercado Libre, y coordinación de última milla. Ideal para empresas que venden online y necesitan outsourcing logístico." },
+        { "question": "¿Qué incluye el servicio de inspección de mercancía?", "answer": "Inspección física completa: conteo de unidades vs. packing list, verificación de calidad, detección de daños o no conformidades, fotografías detalladas, y reporte digital con evidencia. Ideal para compras a proveedores nuevos o mercancía de alto valor. Se realiza pre-embarque o post-arribo." },
+        { "question": "¿Pueden consolidar carga de múltiples proveedores?", "answer": "Sí, uno de nuestros servicios principales. Recibimos mercancía de tus diferentes proveedores en nuestro warehouse en origen (ej. Shanghai), inspeccionamos, re-embalamos si necesario, consolidamos en un contenedor único, y enviamos a destino. Reduces costos de flete y optimizas cubicaje." },
+        { "question": "¿Qué es un servicio 4PL y cuándo conviene?", "answer": "4PL (Fourth Party Logistics) es cuando outsourceas toda tu operación logística: gestionamos proveedores, inventarios, almacenaje, distribución y KPIs. Conviene cuando necesitas focus en ventas/marketing y prefieres dejar logística a expertos. Incluye WMS, análisis de datos y optimización continua." }
+      ],
+      "cta": { "title": "¿Listo para optimizar tu almacenaje e inventario?", "subtitle": "Descubre cómo nuestros servicios 4PL pueden generar ventajas competitivas", "btnPrimary": "Solicitar cotización", "btnSecondary": "Hablar con un experto" }
+    },
+    "multimodal": {
+      "hero": {
+        "title": "Servicio Multimodal: Rutas Optimizadas Integradas",
+        "subtitle": "Equilibrio perfecto entre costo y tiempo mediante combinación estratégica de transporte marítimo, aéreo y terrestre."
+      },
+      "features": {
+        "feature1": { "title": "Optimización de costos", "description": "Equilibrio perfecto entre costo y tiempo mediante combinación estratégica de modos" },
+        "feature2": { "title": "Flexibilidad de rutas", "description": "Ocean/Air, Air/Ocean y combinaciones terrestres para rutas optimizadas" },
+        "feature3": { "title": "Reducción de tránsitos", "description": "Hasta 40% menos tiempo vs. marítimo puro sin costos de aéreo completo" }
+      },
+      "whyChoose": {
+        "title": "Rentabilidad mediante optimización multimodal",
+        "p1": "Dada la constante búsqueda de las empresas por la optimización de los procesos, con miras a la obtención de ventajas en sus industrias, es que nuestra empresa actualmente brinda un servicio multimodal.",
+        "p2": "Entregamos la competitividad del transporte marítimo de cargas, sin desmedro del tiempo de tránsito asociado a las mismas, teniendo como resultado una operación eficiente y eficaz.",
+        "p3": "Aun cuando el servicio multimodal se encuentra intrínseco para todos aquellos orígenes y/o destinos mediterráneos en el caso del transporte marítimo, actualmente ofrecemos servicios ocean/air o air/ocean para diversas rutas que permiten rentabilizar las operaciones de nuestros clientes."
+      },
+      "processTitle": "Proceso de servicio multimodal",
+      "process": {
+        "step1": { "title": "Análisis", "description": "Evaluación de origen/destino, urgencia y presupuesto para ruta óptima", "duration": "24 horas" },
+        "step2": { "title": "Planificación", "description": "Diseño de ruta multimodal con transbordos y coordinación integrada", "duration": "48 horas" },
+        "step3": { "title": "Ejecución", "description": "Gestión de tramos, transbordos y tracking end-to-end", "duration": "Variable según combinación" },
+        "step4": { "title": "Entrega", "description": "Último tramo coordinado con POD y feedback", "duration": "24-72 horas" }
+      },
+      "servicesTitle": "Servicios multimodales que ofrecemos",
+      "services": {
+        "service1": { "title": "Ocean/Air (Mar-Aire)", "description": "Combinación de transporte marítimo en tramo principal con aéreo en última etapa. Ideal para equilibrar costo y velocidad." },
+        "service2": { "title": "Air/Ocean (Aire-Mar)", "description": "Tramo inicial aéreo hasta hub estratégico, luego marítimo hacia destino final. Máxima velocidad en primera etapa crítica." },
+        "service3": { "title": "Marítimo + Terrestre (Multimodal Regional)", "description": "Combinación de tránsito marítimo internacional con distribución terrestre regional. Ideal para destinos mediterráneos." },
+        "service4": { "title": "Aéreo + Terrestre (Express Regional)", "description": "Vuelo internacional hasta aeropuerto hub con última milla terrestre express. Máxima velocidad door-to-door." }
+      },
+      "stats": {
+        "title": "Eficiencia multimodal comprobada",
+        "stat1": { "value": "-40%", "label": "Ahorro vs. Aéreo" },
+        "stat2": { "value": "-15", "label": "Días vs. Marítimo" },
+        "stat3": { "value": "5K+", "label": "Envíos Multimodales/Año" },
+        "stat4": { "value": "95%", "label": "Satisfacción Clientes" }
+      },
+      "faqs": [
+        { "question": "¿Qué es el servicio multimodal y cuándo conviene?", "answer": "Servicio multimodal combina dos o más modos de transporte (marítimo-aéreo, aéreo-terrestre, etc.) para optimizar el equilibrio costo/tiempo. Conviene cuando el aéreo puro es muy costoso pero necesitas menos tiempo que marítimo estándar. Ahorras hasta 50% vs. aéreo con 15-20 días menos que marítimo." },
+        { "question": "¿Qué es Ocean/Air y cuáles son sus ventajas?", "answer": "Ocean/Air es marítimo en tramo principal (ej. Asia-Europa) + aéreo en tramo final (Europa-Sudamérica). Ventajas: ahorro de 40-50% vs. aéreo completo, reducción de 15-20 días vs. marítimo puro, menos riesgo de retrasos portuarios en destino. Ideal para balance costo-tiempo cuando tienes deadline ajustado pero presupuesto limitado." },
+        { "question": "¿Cómo funciona el transbordo entre modos?", "answer": "Gestionamos todo el transbordo en hub intermedio: desconsolidación, cross-docking, cambio de modo y nueva documentación. Tú solo recibes tracking end-to-end sin gestionar cada tramo. Hubs típicos: Dubai, Amsterdam, Miami, Panamá. Tiempo de transbordo: 24-72 horas según hub y conexiones disponibles." },
+        { "question": "¿El servicio multimodal es más caro que marítimo estándar?", "answer": "Sí, típicamente 20-30% más caro que marítimo puro, pero 40-50% más barato que aéreo completo. La ventaja está en el tiempo: reduces 15-20 días vs. marítimo con costo muy inferior a aéreo. Ideal cuando aéreo excede presupuesto pero marítimo es demasiado lento para tu deadline." },
+        { "question": "¿Ofrecen rutas multimodales para destinos mediterráneos?", "answer": "Sí, especialistas en rutas marítimo+terrestre: contenedor hasta puerto principal (Valparaíso, Buenos Aires, Callao) + terrestre hasta ciudades internas (Santiago, Córdoba, Arequipa). Coordinamos tránsito aduanero (DTA), última milla y entrega con tarifa all-inclusive puerto origen → dirección final." },
+        { "question": "¿Puedo hacer seguimiento de todo el trayecto multimodal?", "answer": "Sí, a través de Portal de Clientes ves tracking end-to-end con visibilidad en cada etapa: salida origen, arribo hub, transbordo, segundo tramo, arribo destino y entrega final. Notificaciones automáticas en cada hito. Single point of contact para cualquier consulta durante todo el tránsito." },
+        { "question": "¿Qué documentación se requiere para servicio multimodal?", "answer": "Documentos estándar: Invoice, Packing List, BL (tramo marítimo) o AWB (tramo aéreo), Certificado de Origen. Nosotros gestionamos la documentación de transbordo y cambio de modo. Para destinos con TLC aprovechamos preferencias arancelarias. Asesoría completa incluida en servicio." }
+      ],
+      "cta": { "title": "¿Listo para rentabilizar tus operaciones?", "subtitle": "Descubre cómo el servicio multimodal puede optimizar costo y tiempo", "btnPrimary": "Solicitar cotización", "btnSecondary": "Hablar con un experto" }
+    },
+    "customs": {
+      "hero": {
+        "title": "Servicio de Aduanas: Cumplimiento Normativo Garantizado",
+        "subtitle": "Red internacional de agentes certificados para asesoría en procesos aduaneros, anticipando requisitos documentales y normativos."
+      },
+      "features": {
+        "feature1": { "title": "Cumplimiento normativo", "description": "Asesoría experta en regulaciones aduaneras y clasificación arancelaria correcta" },
+        "feature2": { "title": "Despacho ágil", "description": "Gestión proactiva de documentación para minimizar tiempos de desaduanaje" },
+        "feature3": { "title": "Agentes certificados", "description": "Red de agentes aduanales en puertos y aeropuertos principales" }
+      },
+      "whyChoose": {
+        "title": "Anticipación y cumplimiento normativo",
+        "p1": "Nuestra amplia red de oficinas a nivel internacional, nos permite asesorar a nuestros clientes en los diversos procesos de aduanas necesarios para la exportación y/o importación de bienes.",
+        "p2": "Dicho servicio nos permitirá anticipar los requisitos necesarios a nivel documental y de packing para que las operaciones no sufran atrasos y/o problemas en las aduanas de origen o destino.",
+        "p3": "Contamos con agentes aduanales certificados en puertos y aeropuertos principales, con expertise en clasificación arancelaria, aprovechamiento de TLC, regímenes especiales y compliance aduanero."
+      },
+      "processTitle": "Proceso de despacho aduanero",
+      "process": {
+        "step1": { "title": "Revisión documental", "description": "Análisis de invoice, packing list, certificados y permisos requeridos", "duration": "24 horas pre-arribo" },
+        "step2": { "title": "Presentación DIN/DUS", "description": "Transmisión electrónica de declaración aduanera ante autoridad", "duration": "24-48 horas post-arribo" },
+        "step3": { "title": "Revisión y aforo", "description": "Coordinación con aduana para revisión documental o física", "duration": "1-3 días hábiles" },
+        "step4": { "title": "Levante y entrega", "description": "Retiro de mercancía nacionalizada y coordinación de entrega", "duration": "24-48 horas post-levante" }
+      },
+      "servicesTitle": "Servicios de aduanas que ofrecemos",
+      "services": {
+        "service1": { "title": "Clasificación Arancelaria", "description": "Determinación correcta del código arancelario (HTS/NCM) para evitar errores costosos y cumplir regulaciones." },
+        "service2": { "title": "Despacho de Importación", "description": "Gestión integral del proceso de nacionalización de mercancía en país de destino. Coordinación con autoridades y clientes." },
+        "service3": { "title": "Despacho de Exportación", "description": "Proceso completo de documentación para salida legal de mercancía desde país de origen hacia mercados internacionales." },
+        "service4": { "title": "Regímenes Especiales", "description": "Gestión de regímenes suspensivos y especiales que optimizan flujo de comercio y diferimiento de impuestos." },
+        "service5": { "title": "Consultoría y Compliance", "description": "Asesoría estratégica para cumplimiento aduanero, auditorías preventivas y optimización de procesos de comercio exterior." }
+      },
+      "stats": {
+        "title": "Experiencia en compliance aduanero",
+        "stat1": { "value": "20K+", "label": "Despachos Anuales" },
+        "stat2": { "value": "12", "label": "Países con Agentes" },
+        "stat3": { "value": "98%", "label": "Levantes Sin Observación" },
+        "stat4": { "value": "35+", "label": "Años Experiencia" }
+      },
+      "faqs": [
+        { "question": "¿Qué es el servicio de aduanas y por qué es necesario?", "answer": "El servicio de aduanas gestiona el proceso legal de importación/exportación ante autoridades. Es obligatorio para comercio internacional: determina clasificación arancelaria, calcula impuestos, verifica cumplimiento normativo, obtiene permisos especiales, y coordina retiro de mercancía. Sin agente aduanal certificado no puedes nacionalizar carga." },
+        { "question": "¿Cuánto tarda el proceso de desaduanaje?", "answer": "Depende del país y tipo de carga: Chile/Perú (24-72 horas típicamente), Argentina/Brasil (3-7 días). Factores que afectan: correctitud documental, aforo físico vs. documental, productos regulados que requieren permisos (SAG, ISP), y congestión portuaria. Nuestra gestión proactiva minimiza tiempos." },
+        { "question": "¿Qué documentos se requieren para importar?", "answer": "Documentos básicos: Invoice Comercial, Packing List, BL/AWB, Certificado de Origen (si aplica TLC). Para productos regulados: permisos de SAG (agrícola), ISP (farmacéutico/alimentos), SEC (eléctricos), autorización sanitaria. Nuestro equipo te asesora en requisitos específicos según país y producto." },
+        { "question": "¿Cómo se calcula el arancel a pagar?", "answer": "Arancel se calcula: Valor CIF (costo + flete + seguro) × Tasa arancelaria según código HTS/NCM. Además se suma IVA sobre (CIF + arancel). Existen preferencias arancelarias mediante TLC (ej. Chile-UE: 0% con Cert. Origen EUR1). Hacemos simulación de costos de nacionalización pre-embarque." },
+        { "question": "¿Qué es la clasificación arancelaria y por qué es importante?", "answer": "Clasificación arancelaria es el código de 8-10 dígitos (HTS/NCM/TARIC) que identifica tu producto y determina: tasa de arancel aplicable, permisos requeridos, restricciones o prohibiciones, y elegibilidad para preferencias TLC. Error en clasificación puede resultar en: multas, sobrecostos, retrasos, o incautación de mercancía." },
+        { "question": "¿Ofrecen asesoría para aprovechar Tratados de Libre Comercio?", "answer": "Sí, especialistas en TLC: Chile-UE, Chile-USA, Chile-China, Alianza Pacífico, Mercosur, etc. Analizamos cadena de valor, reglas de origen, y acumulación para determinar elegibilidad. Gestionamos Certificados de Origen (Form A, EUR1, COO) y maximizamos ahorro arancelario. Asesoría incluida sin costo adicional." },
+        { "question": "¿Qué pasa si aduana retiene mi mercancía?", "answer": "Motivos comunes de retención: error documental, clasificación incorrecta, falta de permisos, valoración cuestionada, aforo físico discrepante. Nuestro equipo gestiona: respuesta a observaciones, presentación de documentos adicionales, corrección de errores, y coordinación con aduana para levante. Comunicación constante contigo durante proceso." }
+      ],
+      "cta": { "title": "¿Necesitas asesoría aduanera?", "subtitle": "Nuestros expertos te ayudan a anticipar requisitos y evitar retrasos", "btnPrimary": "Solicitar asesoría", "btnSecondary": "Hablar con un experto" }
+    }
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Seleccione uno de nuestros servicios",
+    "description": "Soluciones logísticas integrales diseñadas para cada necesidad",
+    "viewAll": "Ver todos los servicios en detalle",
+    "seeMore": "Ver más",
+    "contactUs": "Contáctanos",
+    "howWeHelp": {
+      "title": "Cómo te ayudamos",
+      "subtitle": "Soluciones logísticas diseñadas para tu negocio",
+      "description": "En Seemann Group sabemos que cada minuto cuenta. Conecta tu negocio con el mundo a través de soluciones integradas en transporte internacional.",
+      "detail1": "Buscamos proveedores",
+      "detail2": "Anticipamos documentos",
+      "detail3": "Gestionamos aduanas",
+      "detail4": "Inventarios y seguros"
+    },
+    "air": {
+      "title": "Transporte Aéreo",
+      "subtitle": "La velocidad que exige tu negocio.",
+      "description": "Gestionamos tu carga aérea con agilidad, precisión y flexibilidad, diseñando rutas que reducen al mínimo los tiempos de tránsito.",
+      "detail1": "General Cargo / Carga General",
+      "detail2": "DG Shipments / Carga Peligrosa",
+      "detail3": "Project Cargo / Carga Sobredimensionada",
+      "detail4": "Just-in-time Shipments",
+      "detail5": "Charter Service",
+      "detail6": "Courier Internacional"
+    },
+    "sea": {
+      "title": "Transporte Marítimo",
+      "subtitle": "Movemos tu carga por mar sin detener el reloj",
+      "description": "Optimizamos tu logística marítima negociando días libres, drop off y documentos emitidos a tiempo.",
+      "detail1": "FCL / Contenedor Completo",
+      "detail2": "LCL / Carga Consolidada",
+      "detail3": "RoRo / Vehículos y Maquinaria",
+      "detail4": "Break Bulk / Carga de Proyecto",
+      "detail5": "Bonded Cargo / Carga en Tránsito",
+      "detail6": "Reefer / Contenedor Refrigerado"
+    },
+    "land": {
+      "title": "Transporte Terrestre",
+      "subtitle": "Conectado sin pausas.",
+      "description": "Conectamos primera y última milla con precisión. Gracias a nuestra red de alianzas internacionales, gestionamos reconocimientos y despacho terrestre.",
+      "detail1": "Less than truck Load (LTL)",
+      "detail2": "Full Truck Load Service (FTL)",
+      "detail3": "Roll-on/Roll-off (RoRo)",
+      "detail4": "Break Bulk (BB) o carga proyecto",
+      "detail5": "Cargas en tránsito / Bonded Cargo"
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "subtitle": "",
+      "description": "¿Tienes dudas o necesitas una cotización? Nuestro equipo está listo para ayudarte.",
+      "detail1": "Email",
+      "detail2": "Teléfono",
+      "detail3": "Formulario web",
+      "detail4": "Redes sociales"
+    },
+    "warehouse": {
+      "title": "Warehouse",
+      "subtitle": "Inventarios rápidos, operaciones más ágiles.",
+      "description": "Nuestra red global de almacenes optimiza tu cadena de suministro desde puertos y aeropuertos clave.",
+      "detail1": "Almacenaje de las órdenes",
+      "detail2": "Control de inventario",
+      "detail3": "Inspección de mercadería",
+      "detail4": "Repacking"
+    },
+    "multimodal": {
+      "title": "Servicio Multimodal",
+      "subtitle": "Inventarios rápidos, operaciones más ágiles",
+      "description": "Combinamos eficiencia marítima con tiempos de tránsito optimizados para cumplir tus plazos críticos.",
+      "detail1": "Soluciones ocean/air y air/ocean",
+      "detail2": "Operaciones rentables y flexibles",
+      "detail3": "Balance entre velocidad y costo"
+    },
+    "customs": {
+      "title": "Servicio de Aduanas",
+      "subtitle": "Cumplimos la norma. Ganamos tiempo.",
+      "description": "Asesoramos procesos aduaneros de exportación e importación anticipando requisitos documentales y de embalaje.",
+      "detail1": "Eliminamos retrasos",
+      "detail2": "Aseguramos cumplimiento",
+      "detail3": "Optimizamos tiempos",
+      "detail4": "Documentación completa"
+    }
+  },
+  "logoCarousel": {
+    "subtitle": "Nuestros Partners",
+    "title": "Empresas Afiliadas"
+  },
+  "history": {
+    "subtitle": "Conócenos mejor",
+    "title": "Nuestra Esencia",
+    "historia": {
+      "title": "Historia",
+      "description": "Seemann Group nace como resultado de una vasta experiencia de sus fundadores en el mercado de los seguros, reaseguros y de logística internacional, con más de 35 años de desarrollo."
+    },
+    "mision": {
+      "title": "Misión",
+      "description": "Somos una organización flexible, orientada, y preparada, para enfrentar los cambios que necesita el mercado de hoy día, que nos permita dar una rápida y profesional respuesta a las necesidades de nuestros clientes."
+    },
+    "vision": {
+      "title": "Visión",
+      "description": "A nivel interno, buscamos seguir desarrollando procesos de mejoramiento continuo que nos permitan seguir evaluando y mejorando la calidad de nuestro servicio."
+    },
+    "valores": {
+      "title": "Valores",
+      "description": "• Empatía y Orientación al cliente\n • Personalización\n • Responsabilidad\n • Sinceridad/Transparencia\n • Compromiso/Pro actividad\n • Flexibilidad"
+    },
+    "seeMore": "Ver más"
+  },
+  "tools": {
+    "title": "Herramientas",
+    "subtitle": "SeemannGroup",
+    "quotations": "Cotizaciones",
+    "conversions": "Conversiones",
+    "enterHere": "Entre aquí",
+    "tracking": "Portal de Clientes"
+  },
+  "footer": {
+    "menu": "Menú",
+    "getInTouch": "Síguenos",
+    "description": "Líder en soluciones logísticas internacionales con más de 35 años de experiencia. Conectamos tu negocio con el mundo.",
+    "copyright": "Diseñado y Programado por SphereGlobal",
+    "terms": "Términos y Condiciones"
+  },
+  "ourCompany": {
+    "banner": {
+      "subtitle": "Transporte • Seguridad",
+      "title": "NUESTRA EMPRESA"
+    },
+    "historia": {
+      "title": "Historia",
+      "p1": "Seemann Group nace como resultado de una vasta experiencia de sus fundadores en el mercado de los seguros, reaseguros y de logística internacional, con más de 35 años de desarrollo.",
+      "p2": "Su fortaleza consiste en la entrega de asesorías profesionales y técnicas a sus clientes, evaluando siempre la mejor alternativa para el cumplimiento de sus objetivos.",
+      "p3": "A través de su trayectoria, se han desarrollado herramientas útiles y versátiles para diferentes tamaños de empresas, que nos permiten un trabajo eficaz en pequeñas, medianas y grandes empresas de Latino América, recientemente en Estados Unidos y próximamente en Europa."
+    },
+    "mision": {
+      "title": "Misión",
+      "p1": "Seemann Group es una empresa dedicada al transporte internacional de carga, freight forward, con una fuerte vocación de servicio, fundamentando su propuesta comercial en la satisfacción de sus clientes respecto del trabajo otorgado. Nuestro compromiso estará en un crecimiento sustentable que garantice una alta calidad en el servicio ofrecido, interiorizándonos y comprometiéndonos con las necesidades de cada uno de nuestros clientes.",
+      "p2": "Somos una organización flexible, orientada, y preparada, para enfrentar los cambios que necesita el mercado de hoy, que nos permita dar una rápida y profesional respuesta a las necesidades de nuestros clientes. Actualmente nuestra empresa se compone por profesionales de diversas áreas con fuerte vocación de servicio, trabajo bajo presión y orientación al cambio."
+    },
+    "vision": {
+      "title": "Visión",
+      "p1": "Buscamos ser una empresa sólida a nivel mundial, con una expansión internacional relevante, alcanzando una mayor cobertura en economías que consideramos estratégicas que nos permita garantizar un trabajo con la más alta calidad en la gestión de operaciones de comercio exterior, como actualmente lo desarrollamos en los mercados que participamos.",
+      "p2": "A nivel interno, buscamos seguir desarrollando procesos de mejoramiento continuos que nos permitan seguir evaluando y optimizando la calidad de nuestro servicio."
+    },
+    "valores": {
+      "title": "Valores",
+      "intro": "Dentro de los valores corporativos de nuestra empresa se encuentran:",
+      "empathy": {
+        "title": "Empatía y orientación al cliente:",
+        "description": "nuestro principal objetivo será la entrega de un servicio de alta calidad profesional, donde prime la satisfacción del cliente respecto del trabajo realizado."
+      },
+      "personalization": {
+        "title": "Personalización:",
+        "description": "conocimiento y empatía con nuestros clientes en atención a sus necesidades, desarrollando soluciones personalizadas de alto impacto que nos garanticen una mayor satisfacción del trabajo realizado."
+      },
+      "responsibility": {
+        "title": "Responsabilidad:",
+        "description": "con el manejo de la información, los compromisos adquiridos y el tratamiento de las operaciones en su globalidad."
+      },
+      "sincerity": {
+        "title": "Sinceridad y transparencia:",
+        "description": "compromiso con la entrega de la información fidedigna y de manera oportuna."
+      },
+      "commitment": {
+        "title": "Compromiso y pro actividad:",
+        "description": "en la búsqueda de soluciones que brinden una optimización en las operaciones de nuestros clientes."
+      },
+      "flexibility": {
+        "title": "Flexibilidad:",
+        "description": "ser una organización flexible, orientada a los cambios, que nos permita una pronta adaptación a las necesidades tanto del cliente, como del entorno."
+      }
+    },
+    "gallery": {
+      "subtitle": "Nuestra",
+      "title": "Experiencia"
+    }
+  },
+  "servicesPage": {
+    "banner": {
+      "subtitle": "Transporte • Seguridad",
+      "title": "Servicios"
+    },
+    "hero": {
+      "title": "Soluciones Logísticas Integrales",
+      "subtitle": "Optimizamos tiempo, control y costos en cada envío. Conectamos tu negocio con el mundo de forma confiable y eficiente.",
+      "cta1": "Solicitar Cotización",
+      "cta2": "Ver Servicios",
+      "stat1": "5 Países",
+      "stat2": "24/7 Tracking",
+      "stat3": "Carga Asegurada"
+    },
+    "value": {
+      "title": "¿Por qué confiar en Seemann Group?",
+      "desc": "Más de 35 años de experiencia nos respaldan como líderes en logística internacional. Ofrecemos soluciones integrales adaptadas a las necesidades de cada cliente.",
+      "bullet1Title": "Qué hacemos",
+      "bullet1Desc": "Freight forwarding integral: aéreo, marítimo, terrestre y multimodal con servicios de valor agregado.",
+      "bullet2Title": "Para quién",
+      "bullet2Desc": "Empresas importadoras/exportadoras que buscan un partner logístico confiable y proactivo.",
+      "bullet3Title": "Resultado",
+      "bullet3Desc": "Operaciones optimizadas, visibilidad 24/7 y costos controlados para impulsar tu crecimiento."
+    },
+    "air": {
+      "title": "Transporte Aéreo",
+      "oneLiner": "Velocidad y precisión global",
+      "shortDesc": "Velocidad y eficiencia para cargas urgentes",
+      "benefit1": "Entregas Express 24-72hrs",
+      "benefit2": "Tracking en tiempo real",
+      "benefit3": "Cobertura global 100+ destinos"
+    },
+    "sea": {
+      "title": "Transporte Marítimo",
+      "oneLiner": "Capacidad y economía en océanos",
+      "shortDesc": "Soluciones FCL y LCL optimizadas",
+      "benefit1": "Full Container (FCL) y Consolidado (LCL)",
+      "benefit2": "Tarifas competitivas certificadas",
+      "benefit3": "Gestión documental completa"
+    },
+    "land": {
+      "title": "Transporte Terrestre",
+      "oneLiner": "Conectando destinos continentales",
+      "shortDesc": "Conexión terrestre nacional e internacional",
+      "benefit1": "Rutas Chile, Perú, Argentina",
+      "benefit2": "Flota moderna rastreada GPS",
+      "benefit3": "Entregas puntuales garantizadas"
+    },
+    "warehouse": {
+      "title": "Warehouse & Fulfillment",
+      "oneLiner": "Almacenaje estratégico 24/7",
+      "shortDesc": "Almacenaje y distribución especializada",
+      "benefit1": "Bodegas certificadas estratégicas",
+      "benefit2": "WMS para control de inventario",
+      "benefit3": "Pick & Pack personalizado"
+    },
+    "multimodal": {
+      "title": "Servicio Multimodal",
+      "oneLiner": "Rutas optimizadas integradas",
+      "shortDesc": "Combinación óptima de modos de transporte",
+      "benefit1": "Optimización de costos y tiempos",
+      "benefit2": "Un solo interlocutor end-to-end",
+      "benefit3": "Soluciones personalizadas"
+    },
+    "customs": {
+      "title": "Servicio de Aduanas",
+      "oneLiner": "Cumplimiento normativo garantizado",
+      "shortDesc": "Gestión aduanera integral y eficiente",
+      "benefit1": "Agentes aduaneros certificados",
+      "benefit2": "Clasificación arancelaria correcta",
+      "benefit3": "Despachos ágiles sin demoras"
+    },
+    "grid": {
+      "title": "Nuestros Servicios",
+      "subtitle": "Soluciones logísticas diseñadas para cada necesidad"
+    },
+    "card": {
+      "cta1": "Ver más información"
+    },
+    "portalClientes": {
+      "badge": "Tracking 24/7",
+      "title": "PORTAL DE CLIENTES",
+      "subtitle": "Monitorea tu carga en tiempo real",
+      "description": "Accede a tu portal personalizado y monitorea cada etapa de tus envíos con información actualizada en tiempo real",
+      "feature1Title": "Ubicación en tiempo real",
+      "feature1Desc": "Tracking GPS por etapas de tu envío",
+      "feature2Title": "Documentos digitales",
+      "feature2Desc": "Invoice, AWB, Packing List, Certificados",
+      "feature3Title": "Notificaciones automáticas",
+      "feature3Desc": "Alertas en hitos clave del proceso",
+      "feature4Title": "Historial completo",
+      "feature4Desc": "Acceso a operaciones pasadas y análisis",
+      "feature5Title": "Información segura",
+      "feature5Desc": "Acceso protegido y encriptado 24/7",
+      "feature6Title": "Reportes & Analytics",
+      "feature6Desc": "Métricas y KPIs de tus operaciones",
+      "nav1": "Mis envíos",
+      "nav2": "Documentos",
+      "nav3": "Reportes",
+      "status1": "En tránsito",
+      "status2": "Entregado",
+      "status3": "En aduana",
+      "cta": "Acceder al Portal de Clientes",
+      "ctaSubtext": "Portal disponible para todos nuestros clientes sin costo adicional"
+    },
+    "finalCta": {
+      "title": "¿Listo para optimizar tu logística?",
+      "subtitle": "Nuestros expertos están listos para diseñar la solución perfecta para tu negocio",
+      "cta1": "Solicitar Cotización",
+      "cta2": "Hablar con un Experto",
+      "faqTitle": "Preguntas Frecuentes",
+      "faqSubtitle": "Resolvemos tus dudas sobre este servicio"
+    },
+    "intro": {
+      "title": "Nuestros servicios",
+      "description": "Nuestro servicio es un servicio integral, donde el factor principal dice relación al transporte internacional de cargas. No obstante aquello, ofrecemos y realizamos asesorías profesionales en la búsqueda y negociación de nuevos proveedores de productos, asesoría en la emisión de documentos y/o certificados; apoyo en los proceso de aduanas en necesarios en los países de aduana y/o destino; administración de inventarios; y asesoría y gestión de seguros involucrados en los proceso de comercio exterior."
+    },
+    "moreAbout": {
+      "subtitle": "Más de nosotros",
+      "title": "Seemann Group"
+    },
+    "airTransport": {
+      "title": "Transporte Aéreo",
+      "p1": "Dada la naturaleza de la prestación, donde el plazo de entrega resulta ser el factor fundamental, nuestro servicio se caracteriza por una oportuna y proactiva gestión de las operaciones, analizando diversas opciones de embarque, garantizando una mayor frecuencia de salida y flexibilidad en el tránsito.",
+      "p2": "Dado que nuestra propuesta se basa en la individualización de los clientes, nuestro servicio siempre buscará y presentará alternativas para los tránsitos, que permita el establecimiento de soluciones adaptadas a cada una las distintas realidades de las diversas industrias.",
+      "servicesIntro": "Los servicios que actualmente brindamos son:",
+      "service1": "Servicio Carga General / General Cargo",
+      "service2": "Servicio Carga Peligrosa / Dangerous Goods (DG Shipments)",
+      "service3": "Servicio Carga Proyecto / Project Cargo (Oversize Shipments)",
+      "service4": "Servicio Carga en tránsito / Bonded Cargo (In transit shipments)",
+      "service5": "Servicio Carga Just in time",
+      "service6": "Servicio Carga perecederos o con control de temperatura (Pharmaceutical)",
+      "service7": "Servicio Charter",
+      "service8": "Servicio Courier"
+    },
+    "seaTransport": {
+      "title": "Transporte Marítimo",
+      "p1": "Los mercados hoy en día buscan el transporte marítimo por la fuerte vocación de obtener eficacia en las operaciones, buscando optimizar los recursos involucrados en cada una de éstas, por lo que nuestra empresa se compromete a una fuerte negociación sobre los contratos de transporte marítimo.",
+      "p2": "Nuestra cobertura a nivel mundial nos ha permitido establecer posiciones en cada uno de los puertos de embarque o destino que se nos solicite, estableciendo un servicio tanto para full container, como carga consolidada.",
+      "servicesIntro": "Los servicios que actualmente desarrollamos son:",
+      "service1": "Servicio Full Container (FCL)",
+      "service2": "Servicio Less Container (LCL), o Carga consolidada",
+      "service3": "Servicio Roll-on/Roll-off (RoRo)",
+      "service4": "Servicio Break Bulk (BB), o carga proyecto",
+      "service5": "Servicio Cargas en tránsito / Bonded Cargo (In transit shipments)",
+      "service6": "Servicio Full Container Reefer"
+    },
+    "landTransport": {
+      "title": "Transporte Terrestre",
+      "p1": "En vista que varios de los incoterms actualmente utilizados en los proceso de compra y venta de comercio exterior involucran el tránsito terrestre, hemos realizado alianzas con las diversas empresas a nivel internacional que nos permite entregarles los servicios de recogida y/o despacho de sus operaciones.",
+      "servicesIntro": "Dentro de las herramientas que disponemos para nuestros clientes se encuentran:",
+      "service1": "Servicio Less than truck Load (LTL)",
+      "service2": "Servicio Full Truck Load Service (FTL)",
+      "service3": "Servicio Roll-on/Roll-off (RoRo)",
+      "service4": "Servicio Break Bulk (BB), o carga proyecto",
+      "service5": "Servicio Cargas en tránsito / Bonded Cargo (In transit shipments)"
+    },
+    "warehouse": {
+      "title": "Warehouse",
+      "shortDesc": "Almacenaje y distribución especializada",
+      "benefit1": "Bodegas certificadas estratégicas",
+      "benefit2": "WMS para control de inventario",
+      "benefit3": "Pick & Pack personalizado",
+      "p1": "Actualmente contamos con una amplia cobertura de warehouse a nivel mundial, que le otorgará a nuestros clientes la capacidad de almacenar y consolidar carga en los diversos puertos y/o aeropuertos, con el objetivo de optimizar cada logística.",
+      "servicesIntro": "Dentro de los servicios que actualmente podemos entregarle a nuestro cliente se encuentra:",
+      "service1": "Almacenaje de las órdenes",
+      "service2": "Control de inventario",
+      "service3": "Inspección de mercadería",
+      "service4": "Repacking"
+    },
+    "multimodal": {
+      "title": "Servicio Multimodal",
+      "shortDesc": "Combinación óptima de modos de transporte",
+      "benefit1": "Optimización de costos y tiempos",
+      "benefit2": "Un solo interlocutor end-to-end",
+      "benefit3": "Soluciones personalizadas",
+      "p1": "Dada la constante búsqueda de las empresa por la optimización de los procesos, con miras a la obtención de ventajas en sus industrias, es que nuestra empresa actualmente brinda un servicio multimodal a través del cual entrega la competitividad del transporte marítimo de cargas, sin desmedro del tiempo de tránsito asociado."
+    },
+    "customs": {
+      "title": "Servicio de Aduanas",
+      "shortDesc": "Gestión aduanera integral y eficiente",
+      "benefit1": "Agentes aduaneros certificados",
+      "benefit2": "Clasificación arancelaria correcta",
+      "benefit3": "Despachos ágiles sin demoras",
+      "p1": "Nuestra amplia red de oficinas a nivel internacional, nos permite asesorar a nuestros clientes en los diversos procesos de aduanas necesarios para la exportación y/o importación de bienes. Dicho servicio nos permitirá anticipar los requisitos necesarios a nivel documental y de packing."
+    }
+  },
+  "offices": {
+    "subtitle": "Dónde estamos",
+    "title": "Nuestras Oficinas",
+    "viewOnMap": "Ver en el mapa"
+  },
+  "insights": {
+    "newInsight": "Nuevo Insight",
+    "readFull": "Leer Insight Completo",
+    "seeAll": "Ver Todos los Insights",
+    "readTime": "5 min lectura"
+  },
+  "blog": {
+    "subtitle": "Noticias y Novedades",
+    "title": "Nuestros Insights",
+    "readMore": "Leer más",
+    "viewAll": "Ver todos los artículos",
+    "backToBlog": "Volver al blog",
+    "shareArticle": "Compartir este artículo",
+    "notFound": "Artículo no encontrado",
+    "notFoundMessage": "Lo sentimos, no pudimos encontrar el artículo que buscas.",
+    "noPosts": "No hay artículos disponibles",
+    "noPostsMessage": "Aún no hemos publicado ningún artículo. ¡Vuelve pronto!"
+  },
+  "executives": {
+    "subtitle": "Estamos aquí para ayudarte con tu logística internacional",
+    "title": "Realiza tus cotizaciones con nosotros",
+    "meetTeam": "Conoce a nuestro equipo",
+    "ourTeam": "Nuestros Ejecutivos",
+    "contactLabel": "Contacta a",
+    "teamTitle": "NUESTRO EQUIPO",
+    "contactViaWhatsApp": "Contactar por WhatsApp",
+    "positions": {
+      "gerenteGeneral": "Gerente General",
+      "gerenteComercial": "Gerente Comercial",
+      "especialistaPricing": "Especialista en Pricing",
+      "ejecutivoComercial": "Ejecutivo Comercial",
+      "countryManagerPeru": "Country Manager Perú",
+      "countryManagerColombia": "Country Manager Colombia",
+      "countryManagerMexico": "Country Manager México"
+    }
+  },
+  "newclients": {
+    "subtitle": "Para nosotros es un placer tenerte como nuevo cliente",
+    "title": "Contacta a uno de nuestros ejecutivos",
+    "meetTeam": "Conoce a nuestro equipo",
+    "ourTeam": "Nuestros Ejecutivos",
+    "contactViaWhatsApp": "Contactar por WhatsApp"
+  },
+  "contact": {
+    "hero": {
+      "title": "Hagamos Crecer tu Negocio Juntos",
+      "subtitle": "Más de 35 años de experiencia respaldan nuestras soluciones logísticas. Cuéntanos sobre tu proyecto y te ayudaremos a encontrar la mejor solución."
+    },
+    "stats": {
+      "clients": "Clientes Activos",
+      "years": "Años de Experiencia",
+      "satisfaction": "Satisfacción"
+    },
+    "form": {
+      "title": "Solicita una Cotización",
+      "subtitle": "Completa el formulario y te contactaremos pronto",
+      "name": "Nombre Completo",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email Corporativo",
+      "emailPlaceholder": "tu@empresa.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+56 9 XXXX XXXX",
+      "company": "Empresa",
+      "companyPlaceholder": "Nombre de tu empresa",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu necesidad logística...",
+      "submit": "Enviar Solicitud",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado! Te contactaremos pronto.",
+      "error": "Error al enviar el formulario. Por favor, intenta nuevamente."
+    },
+    "benefits": {
+      "title": "¿Por qué elegirnos?",
+      "subtitle": "Nos comprometemos con el éxito de tu operación logística",
+      "response": {
+        "title": "Respuesta en 24 horas",
+        "desc": "Nuestro equipo te responderá en menos de 24 horas hábiles"
+      },
+      "security": {
+        "title": "Operaciones Seguras",
+        "desc": "Garantizamos la seguridad de tu carga con seguros y tracking 24/7"
+      },
+      "optimization": {
+        "title": "Optimización de Costos",
+        "desc": "Analizamos tu operación para encontrar la mejor solución logística"
+      },
+      "coverage": {
+        "title": "Cobertura Global",
+        "desc": "Presencia en 5 países y conexiones en más de 100 destinos"
+      }
+    },
+    "info": {
+      "phone": {
+        "title": "Teléfono",
+        "desc": "Lun - Vie 9:00 - 18:00"
+      },
+      "email": {
+        "title": "Email",
+        "desc": "Respuesta en 24 horas"
+      },
+      "address": {
+        "title": "Oficina Principal",
+        "desc": "Av. Libertad #1405, of. 1203"
+      }
+    }
+  },
+  "newClientForm": {
+    "title": "Formulario Clientes Nuevos",
+    "subtitle": "Complete el formulario con la información requerida",
+    "requiredNote": "Los campos marcados con * son obligatorios",
+    "successTitle": "¡Formulario enviado exitosamente!",
+    "successMessage": "Hemos recibido su información y nos pondremos en contacto pronto.",
+    "errorTitle": "Error al enviar el formulario",
+    "errorMessage": "Por favor, intente nuevamente.",
+    "submitButton": "Enviar Formulario",
+    "submitting": "Enviando...",
+    "privacyNote": "Al enviar este formulario, acepta que sus datos serán procesados de acuerdo con nuestra política de privacidad.",
+    "mainData": {
+      "title": "Datos Principales",
+      "rut": "RUT",
+      "rutPlaceholder": "Ej: 12.345.678-9",
+      "razonSocial": "Razón Social",
+      "razonSocialPlaceholder": "Razón social completa",
+      "nombreFantasia": "Nombre Fantasía",
+      "nombreFantasiaPlaceholder": "Nombre comercial",
+      "representanteLegal": "Representante Legal",
+      "representanteLegalPlaceholder": "Nombre completo del representante",
+      "rutRepresentante": "RUT Representante",
+      "giro": "Giro",
+      "giroPlaceholder": "Actividad comercial principal",
+      "formaPago": "Forma de Pago",
+      "formaPagoPlaceholder": "Seleccione una opción",
+      "formaPagoContado": "Contado",
+      "formaPagoCredito": "Crédito",
+      "formaPagoTransferencia": "Transferencia",
+      "plazo": "Plazo",
+      "plazoPlaceholder": "Ej: 30 días"
+    },
+    "addresses": {
+      "title": "Direcciones",
+      "comercial": "Dirección Comercial",
+      "entregaCarga": "Dirección Entrega de Carga",
+      "entregaDoctos": "Dirección Entrega de Documentos",
+      "direccion": "Dirección",
+      "direccionPlaceholder": "Calle y número",
+      "comuna": "Comuna",
+      "comunaPlaceholder": "Comuna",
+      "ciudad": "Ciudad",
+      "ciudadPlaceholder": "Ciudad"
+    },
+    "accounting": {
+      "title": "Contabilidad - Pago de Gastos y Honorarios",
+      "responsableTitle": "Responsable de Contabilidad",
+      "nombre": "Nombre Responsable",
+      "nombrePlaceholder": "Nombre completo",
+      "cargo": "Cargo",
+      "cargoPlaceholder": "Cargo",
+      "email": "Email",
+      "emailPlaceholder": "correo@empresa.com",
+      "celular": "Celular",
+      "celularPlaceholder": "+56 9 1234 5678",
+      "telefono": "Teléfono",
+      "telefonoPlaceholder": "+56 2 1234 5678",
+      "fax": "Fax",
+      "faxPlaceholder": "Número de fax",
+      "comexTitle": "Comex Exportaciones",
+      "comexNombre": "Nombre",
+      "comexCargo": "Cargo",
+      "gerenteTitle": "Gerente Comercial",
+      "gerenteNombre": "Nombre"
+    },
+    "applicant": {
+      "title": "Datos del Solicitante del Formulario",
+      "nombre": "Nombre Completo",
+      "nombrePlaceholder": "Nombre completo del solicitante",
+      "fecha": "Fecha de Solicitud",
+      "celular": "Celular"
+    }
+  }
+}
+
+
