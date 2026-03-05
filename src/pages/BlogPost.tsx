@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { getBlogPostBySlug } from '../services/contentful';
-import { Asset } from 'contentful';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { BLOCKS, INLINES } from '@contentful/rich-text-types';
-import { Calendar, User, ArrowLeft, Tag } from 'lucide-react';
-import { format } from 'date-fns';
-import { es, enUS } from 'date-fns/locale';
-import AOS from 'aos';
+import { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { getBlogPostBySlug } from "../services/contentful";
+import { Asset } from "contentful";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { BLOCKS, INLINES } from "@contentful/rich-text-types";
+import { Calendar, User, ArrowLeft, Tag } from "lucide-react";
+import { format } from "date-fns";
+import { es, enUS } from "date-fns/locale";
+import AOS from "aos";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -19,28 +19,47 @@ const BlogPost = () => {
   // Function to normalize Unicode fancy/italic characters to regular text
   const normalizeText = (text: string): string => {
     if (!text) return text;
-    
+
     // Map of Unicode Mathematical Bold Italic characters to normal characters
     const fancyToNormal: { [key: string]: string } = {
-      '𝙇': 'L', '𝙤': 'o', '𝙜': 'g', '𝙞': 'i', '𝙨': 's', '𝙩': 't', '𝙘': 'c', '𝙖': 'a',
-      '𝙙': 'd', '𝙚': 'e', '𝙢': 'm', '𝙥': 'p', '𝙧': 'r', '𝙮': 'y', '𝙗': 'b', '𝙣': 'n', '𝙡': 'l', '𝙛': 'f'
+      "𝙇": "L",
+      "𝙤": "o",
+      "𝙜": "g",
+      "𝙞": "i",
+      "𝙨": "s",
+      "𝙩": "t",
+      "𝙘": "c",
+      "𝙖": "a",
+      "𝙙": "d",
+      "𝙚": "e",
+      "𝙢": "m",
+      "𝙥": "p",
+      "𝙧": "r",
+      "𝙮": "y",
+      "𝙗": "b",
+      "𝙣": "n",
+      "𝙡": "l",
+      "𝙛": "f",
     };
-    
-    return text.split('').map(char => fancyToNormal[char] || char).join('');
+
+    return text
+      .split("")
+      .map((char) => fancyToNormal[char] || char)
+      .join("");
   };
 
   useEffect(() => {
     AOS.init({
       duration: 800,
-      easing: 'ease',
-      delay: 0
+      easing: "ease",
+      delay: 0,
     });
   }, []);
 
   useEffect(() => {
     const fetchPost = async () => {
       if (!slug) return;
-      
+
       setLoading(true);
       const blogPost = await getBlogPostBySlug(slug);
       setPost(blogPost);
@@ -52,10 +71,10 @@ const BlogPost = () => {
   }, [slug]);
 
   const formatDate = (dateString: string) => {
-    if (!dateString) return '';
+    if (!dateString) return "";
     const date = new Date(dateString);
-    const locale = i18n.language === 'es' ? es : enUS;
-    return format(date, 'dd MMMM yyyy', { locale });
+    const locale = i18n.language === "es" ? es : enUS;
+    return format(date, "dd MMMM yyyy", { locale });
   };
 
   const richTextOptions = {
@@ -89,13 +108,18 @@ const BlogPost = () => {
         return (
           <img
             src={`https:${file.url}`}
-            alt={title || 'Blog image'}
+            alt={title || "Blog image"}
             className="blog-content-image img-fluid rounded my-4"
           />
         );
       },
       [INLINES.HYPERLINK]: (node: any, children: any) => (
-        <a href={node.data.uri} target="_blank" rel="noopener noreferrer" className="blog-content-link">
+        <a
+          href={node.data.uri}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="blog-content-link"
+        >
           {children}
         </a>
       ),
@@ -106,7 +130,15 @@ const BlogPost = () => {
     return (
       <div className="site-wrap">
         <div className="container py-5">
-          <div className="text-center" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div
+            className="text-center"
+            style={{
+              minHeight: "60vh",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <div className="spinner-border text-primary" role="status">
               <span className="visually-hidden">Cargando...</span>
             </div>
@@ -120,12 +152,12 @@ const BlogPost = () => {
     return (
       <div className="site-wrap">
         <div className="container py-5">
-          <div className="text-center" style={{ minHeight: '60vh' }}>
-            <h1 className="mb-4">{t('blog.notFound')}</h1>
-            <p className="mb-4">{t('blog.notFoundMessage')}</p>
+          <div className="text-center" style={{ minHeight: "60vh" }}>
+            <h1 className="mb-4">{t("blog.notFound")}</h1>
+            <p className="mb-4">{t("blog.notFoundMessage")}</p>
             <Link to="/insights" className="btn btn-primary">
               <ArrowLeft size={16} className="me-2" />
-              {t('blog.backToBlog')}
+              {t("blog.backToBlog")}
             </Link>
           </div>
         </div>
@@ -133,19 +165,19 @@ const BlogPost = () => {
     );
   }
 
-  const { title, author, publishDate, featuredImage, content, category } = post.fields;
+  const { title, author, publishDate, featuredImage, content, category } =
+    post.fields;
   const imageAsset = featuredImage as Asset | undefined;
-  const imageUrl = imageAsset?.fields?.file?.url 
-    ? `https:${imageAsset.fields.file.url}` 
+  const imageUrl = imageAsset?.fields?.file?.url
+    ? `https:${imageAsset.fields.file.url}`
     : null;
 
   return (
     <div className="site-wrap">
       {imageUrl && (
-        <div 
+        <div
           className="blog-post-hero"
           style={{ backgroundImage: `url(${imageUrl})` }}
-          data-aos="fade"
         >
           <div className="blog-post-hero-overlay"></div>
         </div>
@@ -154,23 +186,22 @@ const BlogPost = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10 col-xl-8">
-            
-            <div className="blog-post-back" data-aos="fade-up">
+            <div className="blog-post-back">
               <Link to="/insights" className="blog-back-link">
                 <ArrowLeft size={18} />
-                {t('blog.backToBlog')}
+                {t("blog.backToBlog")}
               </Link>
             </div>
 
             <article className="blog-post-article">
-              <header className="blog-post-header" data-aos="fade-up">
+              <header className="blog-post-header">
                 {category && (
                   <span className="blog-post-category">
                     <Tag size={14} />
                     {category}
                   </span>
                 )}
-                
+
                 <h1 className="blog-post-title">{normalizeText(title)}</h1>
 
                 <div className="blog-post-meta">
@@ -189,14 +220,14 @@ const BlogPost = () => {
                 </div>
               </header>
 
-              <div className="blog-post-content" data-aos="fade-up" data-aos-delay="100">
+              <div className="blog-post-content">
                 {documentToReactComponents(content, richTextOptions)}
               </div>
 
-              <div className="blog-post-share" data-aos="fade-up">
-                <p className="mb-3">{t('blog.shareArticle')}</p>
+              <div className="blog-post-share">
+                <p className="mb-3">{t("blog.shareArticle")}</p>
                 <div className="blog-share-buttons">
-                  <a 
+                  <a
                     href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -204,7 +235,7 @@ const BlogPost = () => {
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
-                  <a 
+                  <a
                     href={`https://twitter.com/intent/tweet?url=${window.location.href}&text=${title}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -212,7 +243,7 @@ const BlogPost = () => {
                   >
                     <i className="fab fa-twitter"></i>
                   </a>
-                  <a 
+                  <a
                     href={`https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -220,7 +251,7 @@ const BlogPost = () => {
                   >
                     <i className="fab fa-linkedin"></i>
                   </a>
-                  <a 
+                  <a
                     href={`https://wa.me/?text=${title} ${window.location.href}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -231,10 +262,10 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <div className="blog-post-footer" data-aos="fade-up">
-                <Link to="/insights" className="btn btn-outline-danger">
+              <div className="blog-post-footer">
+                <Link to="/insights" className="btn btn-outline-primary">
                   <ArrowLeft size={16} className="me-2" />
-                  {t('blog.backToBlog')}
+                  {t("blog.backToBlog")}
                 </Link>
               </div>
             </article>

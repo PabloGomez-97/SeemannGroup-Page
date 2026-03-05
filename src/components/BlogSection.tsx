@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { getBlogPosts } from '../services/contentful';
-import { Asset } from 'contentful';
-import { Calendar, User, ArrowRight } from 'lucide-react';
-import { format } from 'date-fns';
-import { es, enUS } from 'date-fns/locale';
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { getBlogPosts } from "../services/contentful";
+import { Asset } from "contentful";
+import { Calendar, User, ArrowRight } from "lucide-react";
+import { format } from "date-fns";
+import { es, enUS } from "date-fns/locale";
 
 const BlogSection = () => {
   const { t, i18n } = useTranslation();
@@ -25,8 +25,8 @@ const BlogSection = () => {
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    const locale = i18n.language === 'es' ? es : enUS;
-    return format(date, 'dd MMMM yyyy', { locale });
+    const locale = i18n.language === "es" ? es : enUS;
+    return format(date, "dd MMMM yyyy", { locale });
   };
 
   if (loading) {
@@ -52,32 +52,38 @@ const BlogSection = () => {
       <div className="container">
         <div className="row mb-5">
           <div className="col-12 text-center">
-            <div className="block-heading-1" data-aos="fade-up">
-              <span>{t('blog.subtitle')}</span>
-              <h2>{t('blog.title')}</h2>
+            <div className="block-heading-1">
+              <span>{t("blog.subtitle")}</span>
+              <h2>{t("blog.title")}</h2>
             </div>
           </div>
         </div>
 
         <div className="row g-4">
-          {posts.map((post: any, index: number) => {
-            const { title, slug, author, publishDate, featuredImage, excerpt, category } = post.fields;
-            
+          {posts.map((post: any) => {
+            const {
+              title,
+              slug,
+              author,
+              publishDate,
+              featuredImage,
+              excerpt,
+              category,
+            } = post.fields;
+
             const imageAsset = featuredImage as Asset | undefined;
-            const imageUrl = imageAsset?.fields?.file?.url 
-              ? `https:${imageAsset.fields.file.url}` 
-              : '/images/default-blog.jpg';
+            const imageUrl = imageAsset?.fields?.file?.url
+              ? `https:${imageAsset.fields.file.url}`
+              : "/images/default-blog.jpg";
 
             return (
-              <div 
-                key={post.sys.id} 
-                className="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
+              <div key={post.sys.id} className="col-lg-4 col-md-6">
                 <article className="blog-card">
-                  <Link to={`/insights/${slug}`} className="blog-card-image-link">
-                    <div 
+                  <Link
+                    to={`/insights/${slug}`}
+                    className="blog-card-image-link"
+                  >
+                    <div
                       className="blog-card-image"
                       style={{ backgroundImage: `url(${imageUrl})` }}
                     >
@@ -105,12 +111,10 @@ const BlogSection = () => {
                       <Link to={`/insights/${slug}`}>{title}</Link>
                     </h3>
 
-                    {excerpt && (
-                      <p className="blog-card-excerpt">{excerpt}</p>
-                    )}
+                    {excerpt && <p className="blog-card-excerpt">{excerpt}</p>}
 
                     <Link to={`/insights/${slug}`} className="blog-card-link">
-                      {t('blog.readMore')}
+                      {t("blog.readMore")}
                       <ArrowRight size={16} className="ms-2" />
                     </Link>
                   </div>
@@ -123,8 +127,8 @@ const BlogSection = () => {
         {posts.length >= 3 && (
           <div className="row mt-5">
             <div className="col-12 text-center">
-              <Link to="/insights" className="btn btn-outline-danger btn-lg">
-                {t('blog.viewAll')}
+              <Link to="/insights" className="btn btn-outline-primary btn-lg">
+                {t("blog.viewAll")}
               </Link>
             </div>
           </div>

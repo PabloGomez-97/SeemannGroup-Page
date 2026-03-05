@@ -13,7 +13,6 @@ import BlogPost from "./pages/BlogPost";
 import Cotizaciones from "./components/Ejecutivos/Cotizaciones";
 import NewClients from "./components/NewClients/NewClients";
 import ContactForm from "./components/ContactForm";
-import ParticlesBackground from "./components/ParticlesBackground";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import LinkedInInsight from "./components/LinkedInInsight";
 
@@ -50,7 +49,6 @@ function App() {
         <ScrollToTop />
         <ScrollToHash />
         <LinkedInInsight />
-        <ParticlesBackground />
 
         <div className="App">
           <Navbar />

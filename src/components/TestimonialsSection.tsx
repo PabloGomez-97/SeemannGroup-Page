@@ -1,6 +1,6 @@
-import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import { Quote } from 'lucide-react';
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import { Quote } from "lucide-react";
 
 const TestimonialsSection = () => {
   const { t } = useTranslation();
@@ -15,10 +15,17 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="testimonials-badge">{t('testimonials.badge', 'TESTIMONIOS')}</span>
-          <h2 className="section-title">{t('testimonials.title', 'Lo que nuestros clientes dicen')}</h2>
+          <span className="testimonials-badge">
+            {t("testimonials.badge", "TESTIMONIOS")}
+          </span>
+          <h2 className="section-title">
+            {t("testimonials.title", "Lo que nuestros clientes dicen")}
+          </h2>
           <p className="section-subtitle">
-            {t('testimonials.subtitle', 'Más de 100 empresas confían en nosotros para sus operaciones logísticas')}
+            {t(
+              "testimonials.subtitle",
+              "Más de 100 empresas confían en nosotros para sus operaciones logísticas",
+            )}
           </p>
         </motion.div>
 
@@ -34,11 +41,20 @@ const TestimonialsSection = () => {
               <div className="testimonial-quote-icon mx-auto mb-4">
                 <Quote size={60} />
               </div>
-              <h3 className="mb-3" style={{ color: '#003366', fontWeight: 600 }}>
-                {t('testimonials.comingSoon', 'Testimonios Próximamente')}
+              <h3
+                className="mb-3"
+                style={{ color: "var(--text-primary)", fontWeight: 600 }}
+              >
+                {t("testimonials.comingSoon", "Testimonios Próximamente")}
               </h3>
-              <p className="testimonial-content mb-0" style={{ fontSize: '1.1rem', color: '#666' }}>
-                {t('testimonials.comingSoonDesc', 'Estamos recopilando testimonios de nuestros clientes satisfechos. Pronto compartiremos sus experiencias trabajando con Seemann Group.')}
+              <p
+                className="testimonial-content mb-0"
+                style={{ fontSize: "1.1rem", color: "#666" }}
+              >
+                {t(
+                  "testimonials.comingSoonDesc",
+                  "Estamos recopilando testimonios de nuestros clientes satisfechos. Pronto compartiremos sus experiencias trabajando con Seemann Group.",
+                )}
               </p>
             </div>
           </div>
@@ -56,19 +72,25 @@ const TestimonialsSection = () => {
             <div className="col-md-4">
               <div className="testimonial-stat">
                 <h3 className="testimonial-stat-number">98%</h3>
-                <p className="testimonial-stat-label">{t('testimonials.stat1', 'Satisfacción del Cliente')}</p>
+                <p className="testimonial-stat-label">
+                  {t("testimonials.stat1", "Satisfacción del Cliente")}
+                </p>
               </div>
             </div>
             <div className="col-md-4">
               <div className="testimonial-stat">
                 <h3 className="testimonial-stat-number">+100</h3>
-                <p className="testimonial-stat-label">{t('testimonials.stat2', 'Clientes Activos')}</p>
+                <p className="testimonial-stat-label">
+                  {t("testimonials.stat2", "Clientes Activos")}
+                </p>
               </div>
             </div>
             <div className="col-md-4">
               <div className="testimonial-stat">
                 <h3 className="testimonial-stat-number">35+</h3>
-                <p className="testimonial-stat-label">{t('testimonials.stat3', 'Años de Experiencia')}</p>
+                <p className="testimonial-stat-label">
+                  {t("testimonials.stat3", "Años de Experiencia")}
+                </p>
               </div>
             </div>
           </div>
@@ -79,4 +101,3 @@ const TestimonialsSection = () => {
 };
 
 export default TestimonialsSection;
-

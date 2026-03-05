@@ -1,0 +1,47 @@
+/* src/styles.css - Global CSS Variables & Design Tokens */
+
+:root {
+  /* Brand Colors */
+  --primary-color: #ff6200;
+  --primary-hover: #e55800;
+  --primary-active: #cc4e00;
+  --primary-light: #fff3eb;
+  --primary-rgb: 255, 98, 0;
+
+  --secondary-color: #1a1a1a;
+  --secondary-light: #2d2d2d;
+
+  /* Neutrals */
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --border-color: #e2e8f0;
+  --bg-light: #f7fafc;
+  --bg-white: #ffffff;
+
+  /* Shadows – subtle only */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.10);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+
+  /* Typography */
+  --font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
