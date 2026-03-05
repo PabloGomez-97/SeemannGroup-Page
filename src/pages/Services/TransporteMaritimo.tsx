@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import {
@@ -16,8 +15,6 @@ import ServiceHero from "../../components/Services/ServiceHero";
 import FeatureGrid from "../../components/Services/FeatureGrid";
 import ServiceAccordion from "../../components/Services/ServiceAccordion";
 import ProcessSteps from "../../components/Services/ProcessSteps";
-import WebTrackingMock from "../../components/Services/WebTrackingMock";
-import FAQAccordion from "../../components/Services/FAQAccordion";
 
 const TransporteMaritimo = () => {
   const { t } = useTranslation();
@@ -119,10 +116,6 @@ const TransporteMaritimo = () => {
       duration: t("servicePages.seaTransport.process.step4.duration"),
     },
   ];
-
-  const faqs = t("servicePages.seaTransport.faqs", {
-    returnObjects: true,
-  }) as Array<{ question: string; answer: string }>;
 
   return (
     <>
