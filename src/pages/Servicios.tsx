@@ -46,7 +46,7 @@ const Servicios = () => {
         t("servicesPage.air.benefit3", "Cobertura global 100+ destinos"),
       ],
       image: "/images/Imagen Transporte Aereo.png",
-      color: "#0ea5e9",
+      color: "#ff6200",
       detailLink: "/servicios/transporte-aereo",
     },
     {
@@ -65,7 +65,7 @@ const Servicios = () => {
         t("servicesPage.sea.benefit2", "Tarifas competitivas certificadas"),
         t("servicesPage.sea.benefit3", "Gestión documental completa"),
       ],
-      image: "/images/Imagen Transporte Marítimo.png",
+      image: "/images/1204.jpg",
       color: "#3b82f6",
       detailLink: "/servicios/transporte-maritimo",
     },

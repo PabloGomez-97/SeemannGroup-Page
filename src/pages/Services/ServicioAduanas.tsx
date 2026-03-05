@@ -212,7 +212,7 @@ const ServicioAduanas = () => {
             </div>
             <div className="col-lg-6">
               <img
-                src="/images/Imagen Servicio de Aduanas.png"
+                src="/images/1208.jpg"
                 alt="Gestión aduanera profesional"
                 className="img-fluid rounded shadow-lg"
                 loading="lazy"
@@ -231,77 +231,8 @@ const ServicioAduanas = () => {
         title={t("servicePages.customs.servicesTitle")}
         items={services}
       />
-
-      <WebTrackingMock />
-
-      <section className="py-5 bg-light">
-        <div className="container text-center">
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <h2 className="mb-4">{t("servicePages.customs.stats.title")}</h2>
-              <div className="row g-4 mb-5">
-                <div className="col-md-4">
-                  <div className="metric-card">
-                    <div className="metric-value">
-                      {t("servicePages.customs.stats.stat1.value")}
-                    </div>
-                    <div className="metric-label">
-                      {t("servicePages.customs.stats.stat1.label")}
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="metric-card">
-                    <div className="metric-value">
-                      {t("servicePages.customs.stats.stat2.value")}
-                    </div>
-                    <div className="metric-label">
-                      {t("servicePages.customs.stats.stat2.label")}
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="metric-card">
-                    <div className="metric-value">
-                      {t("servicePages.customs.stats.stat3.value")}
-                    </div>
-                    <div className="metric-label">
-                      {t("servicePages.customs.stats.stat3.label")}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <FAQAccordion
-        title={t("servicesPage.finalCta.faqTitle", "Preguntas Frecuentes")}
-        subtitle={t(
-          "servicesPage.finalCta.faqSubtitle",
-          "Resolvemos tus dudas sobre este servicio",
-        )}
-        faqs={faqs}
-      />
-
-      <section className="cta-service-final py-5">
-        <div className="container text-center text-white">
-          <h2 className="mb-4">{t("servicePages.customs.cta.title")}</h2>
-          <p className="lead mb-4">{t("servicePages.customs.cta.subtitle")}</p>
-          <div className="d-flex gap-3 justify-content-center flex-wrap">
-            <Link to="/contacto" className="btn btn-light btn-lg px-5">
-              {t("servicePages.customs.cta.btnPrimary")}
-            </Link>
-            <Link to="/team" className="btn btn-outline-light btn-lg px-5">
-              {t("servicePages.customs.cta.btnSecondary")}
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
   );
 };
 
 export default ServicioAduanas;
-

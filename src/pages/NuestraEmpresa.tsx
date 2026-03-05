@@ -194,8 +194,7 @@ const NuestraEmpresa = () => {
                     <div
                       className="h-100"
                       style={{
-                        backgroundImage:
-                          "url('/images/Nuestraempresa/Historia.jpeg')",
+                        backgroundImage: "url('/images/3.jpeg')",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         minHeight: "400px",

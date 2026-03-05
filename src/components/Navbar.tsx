@@ -244,18 +244,6 @@ const Navbar = () => {
                       {t("servicesPage.customs.title")}
                     </Link>
                   </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <Link
-                      className="dropdown-item fw-semibold"
-                      to="/servicios"
-                      onClick={() => window.scrollTo(0, 0)}
-                    >
-                      {t("navbar.viewAllServices")}
-                    </Link>
-                  </li>
                 </ul>
               </li>
 
@@ -280,14 +268,6 @@ const Navbar = () => {
                 <ul
                   className={`dropdown-menu ${openDropdown === "herramientas" ? "show" : ""}`}
                 >
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      to="/servicios/#portal-clientes-section"
-                    >
-                      {t("navbar.tracking")}
-                    </Link>
-                  </li>
                   <li>
                     <Link className="dropdown-item" to="/team">
                       {t("navbar.cotizacion")}

@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { LucideIcon } from 'lucide-react';
+import { motion } from "framer-motion";
+import { LucideIcon } from "lucide-react";
 
 interface Step {
   icon: React.ReactElement<LucideIcon>;
@@ -13,7 +13,10 @@ interface ProcessStepsProps {
   steps: Step[];
 }
 
-const ProcessSteps = ({ title = 'Nuestro proceso de trabajo', steps }: ProcessStepsProps) => {
+const ProcessSteps = ({
+  title = "Nuestro proceso de trabajo",
+  steps,
+}: ProcessStepsProps) => {
   return (
     <section className="process-steps-section py-5 bg-light">
       <div className="container">
@@ -37,10 +40,7 @@ const ProcessSteps = ({ title = 'Nuestro proceso de trabajo', steps }: ProcessSt
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.15, duration: 0.5 }}
               >
-                <div className="step-number">{index + 1}</div>
-                <div className="step-icon text-danger mb-3">
-                  {step.icon}
-                </div>
+                <div className="step-icon text-danger mb-3">{step.icon}</div>
                 <h3 className="step-title h5 mb-2">{step.title}</h3>
                 <p className="step-description text-muted mb-2">
                   {step.description}
@@ -63,4 +63,3 @@ const ProcessSteps = ({ title = 'Nuestro proceso de trabajo', steps }: ProcessSt
 };
 
 export default ProcessSteps;
-
