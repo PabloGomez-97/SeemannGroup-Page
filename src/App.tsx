@@ -15,6 +15,7 @@ import NewClients from "./components/NewClients/NewClients";
 import ContactForm from "./components/ContactForm";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import LinkedInInsight from "./components/LinkedInInsight";
+import ThankYou from "./pages/ThankYou";
 
 // Service Detail Pages
 import TransporteAereo from "./pages/Services/TransporteAereo";
@@ -82,6 +83,7 @@ function App() {
             <Route path="/team" element={<Cotizaciones />} />
             <Route path="/nuevos-clientes" element={<NewClients />} />
             <Route path="/contacto" element={<ContactForm />} />
+            <Route path="/gracias" element={<ThankYou />} />
           </Routes>
           <Footer />
           <ScrollToTopButton />

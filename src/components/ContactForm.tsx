@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import {
@@ -17,6 +18,7 @@ import {
 
 const ContactForm = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     AOS.init({
@@ -69,12 +71,18 @@ const ContactForm = () => {
       const data = await response.json();
 
       if (response.ok && data.success) {
-        setIsSubmitting(false);
-        setSubmitStatus("success");
         setFormData({ name: "", phone: "", email: "", position: "" });
 
-        // Resetear estado después de 5 segundos
-        setTimeout(() => setSubmitStatus("idle"), 5000);
+        // Push dataLayer event for GTM conversion tracking
+        if (typeof window !== "undefined" && (window as any).dataLayer) {
+          (window as any).dataLayer.push({
+            event: "form_submission",
+            form_name: "contacto",
+          });
+        }
+
+        // Redirect to thank you page
+        navigate("/gracias");
       } else {
         throw new Error(data.error || "Error al enviar el formulario");
       }
@@ -377,7 +385,13 @@ const ContactForm = () => {
                   <Phone size={32} />
                 </div>
                 <h4>{t("contact.info.phone.title", "Teléfono")}</h4>
-                <p className="info-value">+56 2 2604 8386</p>
+                <a
+                  href="tel:+56226048386"
+                  className="info-value"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  +56 2 2604 8386
+                </a>
                 <p className="info-desc">
                   {t("contact.info.phone.desc", "Lun - Vie 9:00 - 18:00")}
                 </p>
@@ -390,7 +404,13 @@ const ContactForm = () => {
                   <Mail size={32} />
                 </div>
                 <h4>{t("contact.info.email.title", "Email")}</h4>
-                <p className="info-value">contacto@seemanngroup.com</p>
+                <a
+                  href="mailto:contacto@seemanngroup.com"
+                  className="info-value"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  contacto@seemanngroup.com
+                </a>
                 <p className="info-desc">
                   {t("contact.info.email.desc", "Respuesta en 24 horas")}
                 </p>
