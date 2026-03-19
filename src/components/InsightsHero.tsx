@@ -110,10 +110,21 @@ const InsightsHero = () => {
           <div className="container d-flex align-items-center h-100">
             <div className="row justify-content-center text-center w-100">
               <div className="col-lg-8">
-                <h1>
+                <h1
+                  style={{
+                    color: "white",
+                    textShadow: "0 2px 8px rgba(0,0,0,0.6)",
+                  }}
+                >
                   {t("hero.welcome", "Conectamos tu negocio con el mundo")}
                 </h1>
-                <p className="mb-4">
+                <p
+                  className="mb-4"
+                  style={{
+                    color: "white",
+                    textShadow: "0 1px 6px rgba(0,0,0,0.5)",
+                  }}
+                >
                   {t(
                     "hero.experience",
                     "Experiencia comprobada en logística internacional",
@@ -210,6 +221,8 @@ const InsightsHero = () => {
                         fontWeight: "600",
                         letterSpacing: "1px",
                         textTransform: "uppercase",
+                        color: "white",
+                        textShadow: "0 1px 4px rgba(0,0,0,0.45)",
                       }}
                     >
                       {category}
@@ -221,6 +234,8 @@ const InsightsHero = () => {
                     style={{
                       fontSize: "clamp(1.75rem, 4vw, 2.75rem)",
                       lineHeight: "1.2",
+                      color: "white",
+                      textShadow: "0 2px 10px rgba(0,0,0,0.65)",
                     }}
                   >
                     {title}
@@ -231,9 +246,11 @@ const InsightsHero = () => {
                       className="mb-3"
                       style={{
                         fontSize: "1.05rem",
-                        opacity: 0.9,
+                        opacity: 0.95,
                         maxWidth: "640px",
                         margin: "0 auto 1.5rem",
+                        color: "white",
+                        textShadow: "0 1px 6px rgba(0,0,0,0.5)",
                       }}
                     >
                       {excerpt}
@@ -244,7 +261,7 @@ const InsightsHero = () => {
                     {publishDate && (
                       <div
                         className="d-flex align-items-center gap-2"
-                        style={{ fontSize: "0.85rem" }}
+                        style={{ fontSize: "0.85rem", color: "white" }}
                       >
                         <Calendar size={16} />
                         <span>{formatDate(publishDate)}</span>
@@ -252,7 +269,7 @@ const InsightsHero = () => {
                     )}
                     <div
                       className="d-flex align-items-center gap-2"
-                      style={{ fontSize: "0.85rem" }}
+                      style={{ fontSize: "0.85rem", color: "white" }}
                     >
                       <Eye size={16} />
                       <span>{t("insights.readTime", "5 min lectura")}</span>
