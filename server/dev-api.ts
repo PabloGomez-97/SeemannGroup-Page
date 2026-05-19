@@ -1,8 +1,8 @@
 import { createServer, type IncomingMessage, type ServerResponse } from 'node:http';
 import { config } from 'dotenv';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import sendEmail from '../api/send-email/index';
-import sendNewClient from '../api/send-new-client/index';
+import sendEmail from './handlers/send-email';
+import sendNewClient from './handlers/send-new-client';
 
 config();
 

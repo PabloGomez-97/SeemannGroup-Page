@@ -1,13 +1,13 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { sendBrevoEmail } from '../_lib/brevo/index';
-import { createHandler } from '../_lib/create-handler';
-import { TEAM_RECIPIENTS } from '../_lib/recipients';
+import { sendBrevoEmail } from '../lib/brevo/index';
+import { createHandler } from '../lib/create-handler';
+import { TEAM_RECIPIENTS } from '../lib/recipients';
 import {
   buildClientConfirmationHtml,
   buildTeamNotificationHtml,
   buildTeamNotificationText,
   type ContactPayload,
-} from './templates';
+} from '../templates/contact';
 
 export default createHandler(async (req: VercelRequest, res: VercelResponse) => {
   const body = req.body as Partial<ContactPayload>;

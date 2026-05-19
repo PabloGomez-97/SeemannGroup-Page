@@ -1,18 +1,20 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { sendBrevoEmail } from '../_lib/brevo/index';
-import { createHandler } from '../_lib/create-handler';
-import { TEAM_RECIPIENTS } from '../_lib/recipients';
+import { sendBrevoEmail } from '../lib/brevo/index';
+import { createHandler } from '../lib/create-handler';
+import { TEAM_RECIPIENTS } from '../lib/recipients';
 import {
   buildClientConfirmationHtml,
   buildTeamNotificationHtml,
   buildTeamNotificationText,
-} from './templates';
-import { REQUIRED_FIELDS, type NewClientFormData } from './types';
+} from '../templates/new-client';
+import { REQUIRED_FIELDS, type NewClientFormData } from '../templates/new-client-types';
 
 export default createHandler(async (req: VercelRequest, res: VercelResponse) => {
   const formData = req.body as Partial<NewClientFormData>;
 
-  const missingFields = REQUIRED_FIELDS.filter((field) => !formData[field]?.toString().trim());
+  const missingFields = REQUIRED_FIELDS.filter(
+    (field) => !formData[field]?.toString().trim(),
+  );
 
   if (missingFields.length > 0) {
     return res.status(400).json({
