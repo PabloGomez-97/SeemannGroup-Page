@@ -1,4 +1,4 @@
-import sendEmailHandler from '../server/handlers/send-email';
+import sendEmailHandler from './handlers/send-email.js';
 
 export default sendEmailHandler;
 

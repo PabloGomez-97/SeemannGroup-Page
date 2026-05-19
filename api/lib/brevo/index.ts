@@ -1,4 +1,4 @@
-import type { EmailRecipient } from '../recipients';
+import type { EmailRecipient } from '../recipients.js';
 
 const BREVO_API_URL = 'https://api.brevo.com/v3/smtp/email';
 const DEFAULT_SENDER_EMAIL = 'noreply@sphereglobal.io';

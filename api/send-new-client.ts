@@ -1,4 +1,4 @@
-import sendNewClientHandler from '../server/handlers/send-new-client';
+import sendNewClientHandler from './handlers/send-new-client.js';
 
 export default sendNewClientHandler;
 

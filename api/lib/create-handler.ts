@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { BrevoError } from './brevo/index';
+import { BrevoError } from './brevo/index.js';
 
 type ApiHandler = (
   req: VercelRequest,

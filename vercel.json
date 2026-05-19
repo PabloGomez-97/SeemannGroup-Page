@@ -1,14 +1,6 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "functions": {
-    "api/send-email.ts": {
-      "includeFiles": "server/**"
-    },
-    "api/send-new-client.ts": {
-      "includeFiles": "server/**"
-    }
-  },
   "rewrites": [
     {
       "source": "/((?!api/).*)",

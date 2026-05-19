@@ -1,4 +1,4 @@
-import type { NewClientFormData } from './new-client-types';
+import type { NewClientFormData } from './new-client-types.js';
 
 const formatDate = () =>
   new Date().toLocaleString('es-CL', {
