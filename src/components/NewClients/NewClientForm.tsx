@@ -12,6 +12,7 @@ import {
   Send,
 } from "lucide-react";
 import AOS from "aos";
+import { parseApiResponse } from "../../utils/parseApiResponse";
 
 const NewClientForm = () => {
   const { t } = useTranslation();
@@ -99,7 +100,7 @@ const NewClientForm = () => {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
+      const data = await parseApiResponse(response);
 
       if (response.ok && data.success) {
         setIsSubmitting(false);
@@ -141,7 +142,10 @@ const NewClientForm = () => {
 
         setTimeout(() => setSubmitStatus("idle"), 8000);
       } else {
-        throw new Error(data.error || "Error al enviar el formulario");
+        throw new Error(
+          (typeof data.error === "string" && data.error) ||
+            "Error al enviar el formulario",
+        );
       }
     } catch (error) {
       setIsSubmitting(false);

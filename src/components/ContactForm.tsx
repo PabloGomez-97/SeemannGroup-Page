@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import AOS from "aos";
+import { parseApiResponse } from "../utils/parseApiResponse";
 import {
   Mail,
   Phone,
@@ -68,7 +69,7 @@ const ContactForm = () => {
         }),
       });
 
-      const data = await response.json();
+      const data = await parseApiResponse(response);
 
       if (response.ok && data.success) {
         setFormData({ name: "", phone: "", email: "", position: "" });
@@ -84,7 +85,10 @@ const ContactForm = () => {
         // Redirect to thank you page
         navigate("/gracias");
       } else {
-        throw new Error(data.error || "Error al enviar el formulario");
+        throw new Error(
+          (typeof data.error === "string" && data.error) ||
+            "Error al enviar el formulario",
+        );
       }
     } catch (error) {
       setIsSubmitting(false);

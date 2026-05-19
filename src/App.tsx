@@ -14,7 +14,6 @@ import Cotizaciones from "./components/Ejecutivos/Cotizaciones";
 import NewClients from "./components/NewClients/NewClients";
 import ContactForm from "./components/ContactForm";
 import ScrollToTopButton from "./components/ScrollToTopButton";
-import LinkedInInsight from "./components/LinkedInInsight";
 import ThankYou from "./pages/ThankYou";
 
 // Service Detail Pages
@@ -49,7 +48,6 @@ function App() {
       >
         <ScrollToTop />
         <ScrollToHash />
-        <LinkedInInsight />
 
         <div className="App">
           <Navbar />
