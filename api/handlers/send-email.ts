@@ -4,7 +4,6 @@ import { createHandler } from '../lib/create-handler.js';
 import { TEAM_RECIPIENTS } from '../lib/recipients.js';
 import {
   buildClientConfirmationHtml,
-  buildTeamNotificationHtml,
   buildTeamNotificationText,
   type ContactPayload,
 } from '../templates/contact.js';
@@ -34,7 +33,7 @@ export default createHandler(async (req: VercelRequest, res: VercelResponse) => 
   await sendBrevoEmail({
     to: TEAM_RECIPIENTS,
     subject: `Nuevo contacto: ${payload.nombre}`,
-    htmlContent: buildTeamNotificationHtml(payload),
+    htmlContent: buildClientConfirmationHtml(payload),
     textContent: buildTeamNotificationText(payload),
   });
 
