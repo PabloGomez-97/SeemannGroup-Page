@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import {
@@ -73,6 +73,16 @@ const NewClientForm = () => {
     "idle" | "success" | "error"
   >("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const submitFeedbackRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (submitStatus === "success" || submitStatus === "error") {
+      submitFeedbackRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  }, [submitStatus]);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -241,42 +251,6 @@ const NewClientForm = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10">
-              {/* Success Message */}
-              {submitStatus === "success" && (
-                <motion.div
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="alert alert-success d-flex align-items-center mb-4 shadow-sm"
-                  style={{ borderRadius: "12px", border: "none" }}
-                >
-                  <CheckCircle2 className="me-3" size={24} />
-                  <div>
-                    <strong>{t("newClientForm.successTitle")}</strong>
-                    <p className="mb-0 mt-1">
-                      {t("newClientForm.successMessage")}
-                    </p>
-                  </div>
-                </motion.div>
-              )}
-
-              {/* Error Message */}
-              {submitStatus === "error" && (
-                <motion.div
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="alert alert-danger d-flex align-items-center mb-4 shadow-sm"
-                  style={{ borderRadius: "12px", border: "none" }}
-                >
-                  <AlertCircle className="me-3" size={24} />
-                  <div>
-                    <strong>{t("newClientForm.errorTitle")}</strong>
-                    <p className="mb-0 mt-1">
-                      {errorMessage || t("newClientForm.errorMessage")}
-                    </p>
-                  </div>
-                </motion.div>
-              )}
-
               <form onSubmit={handleSubmit}>
                 {/* DATOS PRINCIPALES */}
                 <motion.div
@@ -1055,6 +1029,42 @@ const NewClientForm = () => {
                     {t("newClientForm.privacyNote")}
                   </p>
                 </motion.div>
+
+                <div ref={submitFeedbackRef} className="mt-4">
+                  {submitStatus === "success" && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="alert alert-success d-flex align-items-center shadow-sm"
+                      style={{ borderRadius: "12px", border: "none" }}
+                    >
+                      <CheckCircle2 className="me-3" size={24} />
+                      <div>
+                        <strong>{t("newClientForm.successTitle")}</strong>
+                        <p className="mb-0 mt-1">
+                          {t("newClientForm.successMessage")}
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+
+                  {submitStatus === "error" && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="alert alert-danger d-flex align-items-center shadow-sm"
+                      style={{ borderRadius: "12px", border: "none" }}
+                    >
+                      <AlertCircle className="me-3" size={24} />
+                      <div>
+                        <strong>{t("newClientForm.errorTitle")}</strong>
+                        <p className="mb-0 mt-1">
+                          {errorMessage || t("newClientForm.errorMessage")}
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </div>
               </form>
             </div>
           </div>
