@@ -144,7 +144,7 @@ const NewClientForm = () => {
       } else {
         throw new Error(
           (typeof data.error === "string" && data.error) ||
-            "Error al enviar el formulario",
+          "Error al enviar el formulario",
         );
       }
     } catch (error) {
