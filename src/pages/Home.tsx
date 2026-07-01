@@ -17,14 +17,14 @@ const Home = () => {
       {/* Hero Principal - Dynamic Insights Carousel */}
       <InsightsHero />
 
+      {/* Credenciales corporativas */}
+      <StatsBar />
+
       {/* Servicios Section - Preview Grid Moderna */}
       <ServicesPreviewGrid />
 
       {/* Web Tracking Mock */}
       <WebTrackingMock />
-
-      {/* Stats Bar - Números que impresionan */}
-      <StatsBar />
 
       {/* Tracking Section */}
       <TrackingSection />

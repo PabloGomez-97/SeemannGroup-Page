@@ -185,19 +185,16 @@ const ServicesPreviewGrid = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span
-                className="text-uppercase fw-bold small d-block mb-2"
-                style={{ color: "var(--primary-color)" }}
-              >
-                {t("services.subtitle", "SELECCIONE UNO DE NUESTROS SERVICIOS")}
+              <span className="services-section-eyebrow d-block mb-2">
+                {t("services.subtitle", "Capacidades logísticas")}
               </span>
-              <h2 className="display-5 fw-bold mb-3">
-                {t("services.title", "NUESTROS SERVICIOS")}
+              <h2 className="services-section-title mb-3">
+                {t("services.title", "Soluciones logísticas integrales")}
               </h2>
-              <p className="text-muted mx-auto" style={{ maxWidth: "600px" }}>
+              <p className="text-muted mx-auto services-section-desc">
                 {t(
                   "services.description",
-                  "Soluciones logísticas integrales diseñadas para cada necesidad",
+                  "Transporte aéreo, marítimo y terrestre, aduanas y almacenaje para operaciones internacionales.",
                 )}
               </p>
             </motion.div>

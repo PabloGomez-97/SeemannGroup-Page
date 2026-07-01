@@ -298,7 +298,7 @@ const Navbar = () => {
                   {t("navbar.quoteNow", "Cotiza Ahora")}
                 </Link>
                 <a
-                  className="btn-portal-clientes btn-portal-clientes--sm"
+                  className="btn-portal-clientes"
                   href="https://portalclientes.seemanngroup.com/login"
                   target="_blank"
                   rel="noopener noreferrer"

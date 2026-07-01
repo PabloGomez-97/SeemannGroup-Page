@@ -44,13 +44,22 @@
     "saveTimeDescription": "With Seemann Group, you gain speed and efficiency in every shipment. Our team manages every detail so you can focus on growing.",
     "clientMessage": "Already a client?",
     "clientPortalMessage2": "Access the",
-    "toQuote": "to quote and track your shipments in real time"
+    "toQuote": "to quote and track your shipments in real time",
+    "corporateTag": "International forwarder",
+    "corporateTitle": "Connecting your business to the world",
+    "corporateSubtitle": "Over 35 years in air, ocean, and ground transport and customs services across 5 countries.",
+    "credentialYears": "35+ years of experience",
+    "credentialCountries": "5 countries",
+    "credentialAlliances": "8 global alliances",
+    "ctaServices": "View services",
+    "insightLabel": "Insight"
   },
   "stats": {
-    "clients": "Active Clients",
+    "years": "Years of experience",
+    "clients": "Active clients",
     "countries": "Countries",
-    "shipments": "Annual Shipments",
-    "alliances": "Global Alliances"
+    "shipments": "Annual shipments",
+    "alliances": "Global alliances"
   },
   "value": {
     "mainTitle": "Save time on every shipment: that's our differentiator",
@@ -425,9 +434,9 @@
     }
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "Select one of our services",
-    "description": "Comprehensive logistics solutions designed for every need",
+    "title": "Integrated logistics solutions",
+    "subtitle": "Logistics capabilities",
+    "description": "Air, ocean, and ground transport, customs, and warehousing for international operations.",
     "viewAll": "View all services in detail",
     "seeMore": "See more",
     "contactUs": "Contact us",
@@ -796,7 +805,7 @@
   },
   "insights": {
     "newInsight": "New Insight",
-    "readFull": "Read Full Insight",
+    "readFull": "Read article",
     "seeAll": "See All Insights",
     "readTime": "5 min read"
   },

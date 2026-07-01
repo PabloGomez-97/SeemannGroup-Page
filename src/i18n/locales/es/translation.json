@@ -39,13 +39,23 @@
     "saveTimeDescription": "Con Seemann Group, ganas velocidad y eficiencia en cada envío. Nuestro equipo gestiona cada detalle para que tú te enfoques en crecer.",
     "clientMessage": "¿Ya eres cliente?",
     "clientPortalMessage2": "Accede al",
-    "toQuote": "para cotizar y rastrear tus envíos en tiempo real"
+    "toQuote": "para cotizar y rastrear tus envíos en tiempo real",
+    "corporateTag": "Forwarder internacional",
+    "corporateTitle": "Conectamos tu negocio con el mundo",
+    "corporateSubtitle": "Más de 35 años en transporte aéreo, marítimo, terrestre y servicios aduaneros con presencia en 5 países.",
+    "credentialYears": "35+ años de experiencia",
+    "credentialCountries": "5 países",
+    "credentialAlliances": "8 alianzas globales",
+    "ctaServices": "Ver servicios",
+    "insightLabel": "Insight",
+    "requestQuoteBtn": "Solicitar cotización"
   },
   "stats": {
-    "clients": "Clientes Activos",
+    "years": "Años de experiencia",
+    "clients": "Clientes activos",
     "countries": "Países",
-    "shipments": "Envíos Anuales",
-    "alliances": "Alianzas Globales"
+    "shipments": "Envíos anuales",
+    "alliances": "Alianzas globales"
   },
   "value": {
     "mainTitle": "Ahorra tiempo en cada envío: ese es nuestro diferenciador",
@@ -581,9 +591,9 @@
     }
   },
   "services": {
-    "title": "Nuestros Servicios",
-    "subtitle": "Seleccione uno de nuestros servicios",
-    "description": "Soluciones logísticas integrales diseñadas para cada necesidad",
+    "title": "Soluciones logísticas integrales",
+    "subtitle": "Capacidades logísticas",
+    "description": "Transporte aéreo, marítimo y terrestre, aduanas y almacenaje para operaciones internacionales.",
     "viewAll": "Ver todos los servicios en detalle",
     "seeMore": "Ver más",
     "contactUs": "Contáctanos",
@@ -952,8 +962,8 @@
   },
   "insights": {
     "newInsight": "Nuevo Insight",
-    "readFull": "Leer Insight Completo",
-    "seeAll": "Ver Todos los Insights",
+    "readFull": "Leer artículo",
+    "seeAll": "Ver todos los insights",
     "readTime": "5 min lectura"
   },
   "blog": {
