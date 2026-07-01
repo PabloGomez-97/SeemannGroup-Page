@@ -358,7 +358,7 @@ const InsightsHero = () => {
       </div>
 
       {/* CTA Bar */}
-      <div style={{ background: "var(--primary-color)", padding: "20px 0" }}>
+      <div className="insights-hero-cta-bar">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7 mb-3 mb-lg-0">

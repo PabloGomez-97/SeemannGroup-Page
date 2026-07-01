@@ -5,20 +5,10 @@ import { Search, HelpCircle, MessageCircle, UserCircle } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
-  const [isSticky, setIsSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const location = useLocation();
   const { t } = useTranslation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsSticky(window.scrollY > 100);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -260,9 +250,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav
-      className={`navbar navbar-expand-lg site-navbar ${isSticky ? "sticky" : ""}`}
-    >
+    <nav className="navbar navbar-expand-lg site-navbar">
       <div className="container">
         <div className="navbar-inner w-100">
           {/* Top row: logo + utilities */}
@@ -302,13 +290,20 @@ const Navbar = () => {
               {mainNavItems}
 
               <div className="navbar-bottom-actions">
+                <Link
+                  to="/team"
+                  className="btn-navbar-quote"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  {t("navbar.quoteNow", "Cotiza Ahora")}
+                </Link>
                 <a
-                  className="btn-portal-clientes"
+                  className="btn-portal-clientes btn-portal-clientes--sm"
                   href="https://portalclientes.seemanngroup.com/login"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <UserCircle size={18} strokeWidth={1.5} />
+                  <UserCircle size={16} strokeWidth={1.5} />
                   {t("navbar.clientPortal")}
                 </a>
               </div>

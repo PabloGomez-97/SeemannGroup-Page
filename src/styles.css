@@ -17,6 +17,11 @@
   --secondary-color: #1a1a1a;
   --secondary-light: #2d2d2d;
 
+  /* Section backgrounds */
+  --section-dark-bg: #1a1a1a;
+  --footer-bg: #0a0a0a;
+  --footer-divider: rgba(255, 255, 255, 0.14);
+
   /* Neutrals */
   --text-primary: #1a1a1a;
   --text-secondary: #4a5568;
