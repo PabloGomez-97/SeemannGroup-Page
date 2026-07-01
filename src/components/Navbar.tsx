@@ -7,12 +7,32 @@ import LanguageSwitcher from "./LanguageSwitcher";
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const { t } = useTranslation();
+
+  const isHomePage = location.pathname === "/";
+  const isOverlay = isHomePage && !isScrolled;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 40);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    document.body.classList.toggle("home-page", isHomePage);
+    return () => document.body.classList.remove("home-page");
+  }, [isHomePage]);
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setOpenDropdown(null);
+    setIsScrolled(window.scrollY > 40);
   }, [location]);
 
   const toggleDropdown = (dropdown: string) => {
@@ -250,7 +270,9 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="navbar navbar-expand-lg site-navbar">
+    <nav
+      className={`navbar navbar-expand-lg site-navbar ${isOverlay ? "site-navbar--overlay" : ""}`}
+    >
       <div className="container">
         <div className="navbar-inner w-100">
           {/* Top row: logo + utilities */}

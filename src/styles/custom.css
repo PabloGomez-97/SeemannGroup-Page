@@ -50,6 +50,10 @@ body {
   line-height: 1.6;
 }
 
+body.home-page {
+  padding-top: 0;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 120px;
@@ -130,6 +134,50 @@ img {
   z-index: 1000;
   padding: 0;
   box-shadow: var(--shadow-sm);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.site-navbar--overlay {
+  background: transparent;
+  border-bottom-color: transparent;
+  box-shadow: none;
+}
+
+.site-navbar--overlay .navbar-top-row {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.site-navbar--overlay .navbar-utility-link,
+.site-navbar--overlay .site-navigation .nav-link {
+  color: #fff;
+}
+
+.site-navbar--overlay .site-navigation .dropdown-toggle::after {
+  filter: brightness(0) invert(1);
+}
+
+.site-navbar--overlay .navbar-utility-link:hover,
+.site-navbar--overlay .site-navigation .nav-link:hover {
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.site-navbar--overlay .btn-navbar-quote {
+  border-color: rgba(255, 255, 255, 0.85);
+  color: #fff;
+}
+
+.site-navbar--overlay .btn-navbar-quote:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.site-navbar--overlay .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.45);
+  filter: invert(1);
 }
 
 .navbar-inner {
@@ -309,8 +357,36 @@ img {
     padding-top: 72px;
   }
 
+  body.home-page {
+    padding-top: 0;
+  }
+
+  :root {
+    --navbar-height: 72px;
+  }
+
   .site-navbar {
     --navbar-height: 72px;
+  }
+
+  .site-navbar--overlay .navbar-collapse-panel {
+    background: var(--bg-white);
+    border-top-color: var(--border-color);
+  }
+
+  .site-navbar--overlay .navbar-collapse-panel .navbar-utility-link,
+  .site-navbar--overlay .navbar-collapse-panel .site-navigation .nav-link {
+    color: var(--text-primary);
+  }
+
+  .site-navbar--overlay .navbar-collapse-panel .site-navigation .nav-link:hover {
+    color: var(--text-primary);
+    background: var(--bg-light);
+  }
+
+  .site-navbar--overlay .navbar-collapse-panel .btn-navbar-quote {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
   }
 
   .navbar-top-row {
@@ -381,7 +457,7 @@ img {
    INSIGHTS HERO – Corporate-first carousel
    ======================================== */
 .insights-hero-loading {
-  height: 480px;
+  height: calc(480px + var(--navbar-height));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -389,7 +465,16 @@ img {
 }
 
 .insights-hero-carousel {
-  height: 480px;
+  height: calc(480px + var(--navbar-height));
+}
+
+.insights-hero-content {
+  padding-top: var(--navbar-height);
+  min-height: calc(480px + var(--navbar-height));
+}
+
+.insights-hero-content-inner {
+  min-height: 480px;
 }
 
 .insights-hero-overlay {
@@ -577,9 +662,17 @@ img {
 }
 
 @media (max-width: 991px) {
-  .insights-hero-carousel,
-  .insights-hero-loading {
-    height: 520px;
+  .insights-hero-carousel {
+    height: calc(520px + var(--navbar-height));
+  }
+
+  .insights-hero-content {
+    padding-top: var(--navbar-height);
+    min-height: calc(520px + var(--navbar-height));
+  }
+
+  .insights-hero-content-inner {
+    min-height: 520px;
   }
 
   .insights-hero-overlay {

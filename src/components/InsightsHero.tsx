@@ -20,8 +20,8 @@ const InsightsHero = () => {
         />
         <div className="insights-hero-overlay position-absolute top-0 start-0 w-100 h-100" />
 
-        <div className="container position-relative h-100">
-          <div className="row align-items-center h-100">
+        <div className="container position-relative insights-hero-content">
+          <div className="row align-items-center insights-hero-content-inner">
             <div className="col-lg-7 text-white insights-hero-corporate">
               <span className="insights-hero-eyebrow">
                 {t("hero.corporateTag", "Forwarder internacional")}
