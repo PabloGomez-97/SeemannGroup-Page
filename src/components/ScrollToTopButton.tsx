@@ -37,7 +37,7 @@ const ScrollToTopButton = () => {
         justifyContent: "center",
         cursor: "pointer",
         zIndex: 999,
-        boxShadow: "0 4px 12px rgba(255, 98, 0, 0.3)",
+        boxShadow: "0 4px 12px rgba(26, 26, 26, 0.25)",
         transition: "opacity 0.2s, background 0.2s",
       }}
       aria-label="Scroll to top"

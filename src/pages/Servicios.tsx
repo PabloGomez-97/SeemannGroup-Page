@@ -46,7 +46,7 @@ const Servicios = () => {
         t("servicesPage.air.benefit3", "Cobertura global 100+ destinos"),
       ],
       image: "/images/Imagen Transporte Aereo.png",
-      color: "#ff6200",
+      color: "#1a1a1a",
       detailLink: "/servicios/transporte-aereo",
     },
     {

@@ -1,7 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { Globe } from "lucide-react";
 
-const LanguageSwitcher = () => {
+interface LanguageSwitcherProps {
+  variant?: "default" | "navbar";
+}
+
+const LanguageSwitcher = ({ variant = "default" }: LanguageSwitcherProps) => {
   const { i18n } = useTranslation();
 
   const currentLanguage = i18n.language;
@@ -11,6 +15,20 @@ const LanguageSwitcher = () => {
     const newLang = isEnglish ? "es" : "en";
     i18n.changeLanguage(newLang);
   };
+
+  if (variant === "navbar") {
+    return (
+      <button
+        onClick={toggleLanguage}
+        className="navbar-utility-link"
+        aria-label="Change language"
+        title={isEnglish ? "Cambiar a Español" : "Switch to English"}
+      >
+        <Globe size={16} strokeWidth={1.5} />
+        <span>{isEnglish ? "EN" : "ES"}</span>
+      </button>
+    );
+  }
 
   return (
     <button
@@ -34,7 +52,7 @@ const LanguageSwitcher = () => {
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.background = "#f8f9fa";
-        e.currentTarget.style.borderColor = "#ff6200";
+        e.currentTarget.style.borderColor = "#1a1a1a";
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.background = "white";

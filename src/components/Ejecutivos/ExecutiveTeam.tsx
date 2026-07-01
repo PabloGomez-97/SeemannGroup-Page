@@ -263,7 +263,7 @@ const ExecutiveTeam = () => {
                     transition: "all 0.3s ease",
                     boxShadow:
                       selectedCountry === country.code
-                        ? "0 4px 12px rgba(255, 98, 0, 0.2)"
+                        ? "0 4px 12px rgba(26, 26, 26, 0.2)"
                         : "0 2px 6px rgba(0,0,0,0.1)",
                     transform:
                       selectedCountry === country.code

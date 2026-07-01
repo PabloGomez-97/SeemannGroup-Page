@@ -41,7 +41,7 @@ const ServicesPreviewGrid = () => {
         t("servicesPage.air.benefit3", "Cobertura global 100+ destinos"),
       ],
       image: "/images/1203.jpg",
-      color: "#ff6200",
+      color: "#1a1a1a",
       detailLink: "/servicios/transporte-aereo",
     },
     {
@@ -61,7 +61,7 @@ const ServicesPreviewGrid = () => {
         t("servicesPage.sea.benefit3", "Gestión documental completa"),
       ],
       image: "/images/1204.jpg",
-      color: "#ff6200",
+      color: "#1a1a1a",
       detailLink: "/servicios/transporte-maritimo",
     },
     {
@@ -78,7 +78,7 @@ const ServicesPreviewGrid = () => {
         t("servicesPage.land.benefit3", "Entregas puntuales garantizadas"),
       ],
       image: "/images/1205.jpg",
-      color: "#ff6200",
+      color: "#1a1a1a",
       detailLink: "/servicios/transporte-terrestre",
     },
     {
@@ -98,7 +98,7 @@ const ServicesPreviewGrid = () => {
         t("servicesPage.warehouse.benefit3", "Pick & Pack personalizado"),
       ],
       image: "/images/1206.jpg",
-      color: "#ff6200",
+      color: "#1a1a1a",
       detailLink: "/servicios/warehouse",
     },
     {
@@ -121,7 +121,7 @@ const ServicesPreviewGrid = () => {
         t("servicesPage.multimodal.benefit3", "Soluciones personalizadas"),
       ],
       image: "/images/1207.jpg",
-      color: "#ff6200",
+      color: "#1a1a1a",
       detailLink: "/servicios/servicio-multimodal",
     },
     {
@@ -141,7 +141,7 @@ const ServicesPreviewGrid = () => {
         t("servicesPage.customs.benefit3", "Despachos ágiles sin demoras"),
       ],
       image: "/images/1208.jpg",
-      color: "#ff6200",
+      color: "#1a1a1a",
       detailLink: "/servicios/servicio-aduanas",
     },
   ];
