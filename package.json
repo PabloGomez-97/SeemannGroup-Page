@@ -22,7 +22,7 @@
     "bootstrap-icons": "^1.13.1",
     "contentful": "^11.10.1",
     "date-fns": "^4.1.0",
-    "framer-motion": "^12.26.1",
+    "framer-motion": "^12.42.2",
     "google-auth-library": "^10.5.0",
     "google-spreadsheet": "^5.0.2",
     "googleapis": "^149.0.0",

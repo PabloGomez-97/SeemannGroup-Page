@@ -50,11 +50,11 @@ const ExecutiveTeam = () => {
     },
     {
       id: "jz",
-      name: "Jesús Zambrano",
+      name: "Jesús Avendaño",
       positionKey: "executives.positions.ejecutivoComercial",
-      email: "jzambrano@seemanngroup.com",
+      email: "javendano@seemanngroup.com",
       phone: "+56985339119",
-      image: "/ejecutivos/jz.jpeg",
+      image: "/ejecutivos/ja.jpeg",
       hierarchy: 3,
       country: "CL",
     },
@@ -89,17 +89,6 @@ const ExecutiveTeam = () => {
       country: "CL",
     },
     {
-      id: "ds",
-      name: "Diego Soto",
-      positionKey: "executives.positions.ejecutivoComercial",
-      email: "dsoto@seemanngroup.com",
-      phone: "+56987698674",
-      image:
-        "https://ui-avatars.com/api/?name=Diego+Soto&background=bd2121&color=fff&size=400",
-      hierarchy: 3,
-      country: "CL",
-    },
-    {
       id: "mp",
       name: "Martín Pérez Salinas",
       positionKey: "executives.positions.ejecutivoComercial",
@@ -121,16 +110,6 @@ const ExecutiveTeam = () => {
       country: "PE",
     },
     {
-      id: "as",
-      name: "Andrea Silva",
-      positionKey: "executives.positions.countryManagerColombia",
-      email: "asilva@seemanngroup.com",
-      phone: "+573112254301",
-      image: "/ejecutivos/Colombia/AS.jpeg",
-      hierarchy: 1,
-      country: "CO",
-    },
-    {
       id: "ag",
       name: "Arturo García",
       positionKey: "executives.positions.countryManagerMexico",
@@ -148,7 +127,9 @@ const ExecutiveTeam = () => {
     { code: "PE", name: "Perú", flag: "https://flagcdn.com/pe.svg" },
     { code: "CO", name: "Colombia", flag: "https://flagcdn.com/co.svg" },
     { code: "MX", name: "México", flag: "https://flagcdn.com/mx.svg" },
-  ];
+  ].filter((country) =>
+    executives.some((exec) => exec.country === country.code),
+  );
 
   // Filtrar ejecutivos por país seleccionado
   const filteredExecutives = executives.filter(

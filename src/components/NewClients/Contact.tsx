@@ -45,11 +45,11 @@ const ExecutiveTeam = () => {
     },
     {
       id: "jz",
-      name: "Jesús Zambrano",
+      name: "Jesús Avendaño",
       position: "Ejecutivo Comercial",
-      email: "jzambrano@seemanngroup.com",
+      email: "javendano@seemanngroup.com",
       phone: "+56985339119",
-      image: "/ejecutivos/jz.png",
+      image: "/ejecutivos/ja.jpeg",
       hierarchy: 3,
     },
     {
@@ -77,15 +77,6 @@ const ExecutiveTeam = () => {
       email: "lmartinez@seemanngroup.com",
       phone: "+56958178234",
       image: "/ejecutivos/lm.png",
-      hierarchy: 3,
-    },
-    {
-      id: "ds",
-      name: "Diego Soto",
-      position: "Ejecutivo Comercial",
-      email: "dsoto@seemanngroup.com",
-      phone: "+56987698674",
-      image: "/ejecutivos/ds.png",
       hierarchy: 3,
     },
   ];

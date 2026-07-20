@@ -88,7 +88,7 @@ const OfficeCards = () => {
           city: "Bogotá",
           address: "Hirin Calle 87 #10-93 Oficina 702, Bogotá, Colombia.",
           phone: "+57 (350) 752-7109",
-          email: "asilva@seemanngroup.com",
+          email: "contacto@seemanngroup.com",
           googleMaps:
             "https://maps.google.com/?q=Calle+87+10-93+Bogota+Colombia",
         },
