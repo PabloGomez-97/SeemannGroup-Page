@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import {
@@ -1026,7 +1027,9 @@ const NewClientForm = () => {
                     className="text-muted mt-3 mb-0"
                     style={{ fontSize: "0.9rem" }}
                   >
-                    {t("newClientForm.privacyNote")}
+                    {t("newClientForm.privacyNote")}{" "}
+                    <Link to="/privacidad">{t("newClientForm.privacyLink")}</Link>
+                    .
                   </p>
                 </motion.div>
 

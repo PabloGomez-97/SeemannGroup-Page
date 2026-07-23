@@ -712,6 +712,7 @@
     "getInTouch": "Síguenos",
     "description": "Líder en soluciones logísticas internacionales con más de 35 años de experiencia. Conectamos tu negocio con el mundo.",
     "copyright": "Diseñado y Programado por SphereGlobal",
+    "privacy": "Política de Privacidad",
     "terms": "Términos y Condiciones"
   },
   "ourCompany": {
@@ -1075,7 +1076,8 @@
     "errorMessage": "Por favor, intente nuevamente.",
     "submitButton": "Enviar Formulario",
     "submitting": "Enviando...",
-    "privacyNote": "Al enviar este formulario, acepta que sus datos serán procesados de acuerdo con nuestra política de privacidad.",
+    "privacyNote": "Al enviar este formulario, acepta que sus datos serán procesados de acuerdo con nuestra",
+    "privacyLink": "política de privacidad"
     "mainData": {
       "title": "Datos Principales",
       "rut": "RUT",

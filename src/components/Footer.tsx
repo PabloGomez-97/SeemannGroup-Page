@@ -118,6 +118,8 @@ const Footer = () => {
             </div>
             <div className="col-md-6 text-center text-md-end">
               <p className="footer-terms mb-0">
+                <Link to="/privacidad">{t('footer.privacy')}</Link>
+                <span className="mx-2">·</span>
                 <Link to="/terminos">{t('footer.terms')}</Link>
               </p>
             </div>

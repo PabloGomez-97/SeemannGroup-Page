@@ -15,6 +15,7 @@ import NewClients from "./components/NewClients/NewClients";
 import ContactForm from "./components/ContactForm";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import ThankYou from "./pages/ThankYou";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 // Service Detail Pages
 import TransporteAereo from "./pages/Services/TransporteAereo";
@@ -82,6 +83,8 @@ function App() {
             <Route path="/nuevos-clientes" element={<NewClients />} />
             <Route path="/contacto" element={<ContactForm />} />
             <Route path="/gracias" element={<ThankYou />} />
+            <Route path="/privacidad" element={<PrivacyPolicy />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
           <Footer />
           <ScrollToTopButton />

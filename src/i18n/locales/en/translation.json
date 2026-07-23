@@ -555,6 +555,7 @@
     "getInTouch": "Follow Us",
     "description": "Leader in international logistics solutions with over 35 years of experience. We connect your business with the world.",
     "copyright": "Designed and Programmed by SphereGlobal",
+    "privacy": "Privacy Policy",
     "terms": "Terms & Conditions"
   },
   "ourCompany": {
@@ -920,7 +921,8 @@
     "errorMessage": "Please try again.",
     "submitButton": "Submit Form",
     "submitting": "Submitting...",
-    "privacyNote": "By submitting this form, you agree that your data will be processed in accordance with our privacy policy.",
+    "privacyNote": "By submitting this form, you agree that your data will be processed in accordance with our",
+    "privacyLink": "privacy policy"
     "mainData": {
       "title": "Main Information",
       "rut": "Tax ID",
