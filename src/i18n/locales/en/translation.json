@@ -922,7 +922,7 @@
     "submitButton": "Submit Form",
     "submitting": "Submitting...",
     "privacyNote": "By submitting this form, you agree that your data will be processed in accordance with our",
-    "privacyLink": "privacy policy"
+    "privacyLink": "privacy policy",
     "mainData": {
       "title": "Main Information",
       "rut": "Tax ID",

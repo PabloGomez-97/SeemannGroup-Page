@@ -1077,7 +1077,7 @@
     "submitButton": "Enviar Formulario",
     "submitting": "Enviando...",
     "privacyNote": "Al enviar este formulario, acepta que sus datos serán procesados de acuerdo con nuestra",
-    "privacyLink": "política de privacidad"
+    "privacyLink": "política de privacidad",
     "mainData": {
       "title": "Datos Principales",
       "rut": "RUT",
