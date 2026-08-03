@@ -1475,9 +1475,83 @@ img {
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 20px 0;
-  margin-top: 20px;
+  padding: 22px 0 24px;
+  margin-top: 12px;
 }
+
+.footer-bottom__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-bottom__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.85rem;
+  margin-left: auto;
+}
+
+.footer-apps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.55rem;
+}
+
+.footer-apps-title {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-store-badges {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.footer-store-badge {
+  display: inline-flex;
+  flex-shrink: 0;
+  line-height: 0;
+  text-decoration: none;
+  opacity: 0.94;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.footer-store-badge:hover,
+.footer-store-badge:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.footer-store-badge img {
+  display: block;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Badges compactos en el footer corporativo */
+.footer-store-badge--app-store img {
+  height: 36px;
+}
+
+.footer-store-badge--google-play img {
+  height: 46px;
+  margin: -7px -6px -7px -9px;
+}
+
 .footer-copyright,
 .footer-terms {
   color: rgba(255, 255, 255, 0.5);
@@ -1496,6 +1570,25 @@ img {
 
 @media (max-width: 767px) {
   .footer-brand { max-width: 100%; margin-bottom: 2rem; }
+
+  .footer-bottom__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom__right {
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .footer-apps {
+    align-items: center;
+  }
+
+  .footer-store-badges {
+    justify-content: center;
+  }
 }
 
 /* ========================================

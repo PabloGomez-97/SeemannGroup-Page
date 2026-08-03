@@ -2,6 +2,21 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Mail, Phone, Facebook, Instagram, Linkedin } from 'lucide-react';
 
+const STORE_BADGES = [
+  {
+    key: 'app-store',
+    href: 'https://apps.apple.com/app/id6793726585',
+    src: '/store/badge-app-store.svg',
+    alt: 'Download on the App Store',
+  },
+  {
+    key: 'google-play',
+    href: 'https://play.google.com/store/apps/details?id=com.seemanngroup.portalclientes',
+    src: '/store/badge-google-play.png',
+    alt: 'Disponible en Google Play',
+  },
+] as const;
+
 const Footer = () => {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
@@ -108,15 +123,34 @@ const Footer = () => {
 
         </div>
 
-        {/* Copyright */}
+        {/* Copyright + apps */}
         <div className="footer-bottom">
-          <div className="row align-items-center">
-            <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              <p className="footer-copyright mb-0">
-                © {currentYear} {t('footer.copyright')}&nbsp;
-              </p>
-            </div>
-            <div className="col-md-6 text-center text-md-end">
+          <div className="footer-bottom__inner">
+            <p className="footer-copyright mb-0">
+              © {currentYear} {t('footer.copyright')}
+            </p>
+
+            <div className="footer-bottom__right">
+              <div className="footer-apps">
+                <p className="footer-apps-title">{t('footer.appsTitle')}</p>
+                <div
+                  className="footer-store-badges"
+                  aria-label={t('footer.storeBadgesAriaLabel')}
+                >
+                  {STORE_BADGES.map((badge) => (
+                    <a
+                      key={badge.key}
+                      href={badge.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`footer-store-badge footer-store-badge--${badge.key}`}
+                    >
+                      <img src={badge.src} alt={badge.alt} loading="lazy" />
+                    </a>
+                  ))}
+                </div>
+              </div>
+
               <p className="footer-terms mb-0">
                 <Link to="/privacidad">{t('footer.privacy')}</Link>
                 <span className="mx-2">·</span>
