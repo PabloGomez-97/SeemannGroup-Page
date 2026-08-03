@@ -13,10 +13,58 @@ import {
   Send,
 } from "lucide-react";
 import AOS from "aos";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { parseApiResponse } from "../../utils/parseApiResponse";
+
+const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY as string;
+
+const emptyForm = {
+  // Datos Principales
+  rut: "",
+  razonSocial: "",
+  nombreFantasia: "",
+  representanteLegal: "",
+  rutRepresentante: "",
+  giro: "",
+  formaPago: "",
+  plazo: "",
+
+  // Direcciones
+  direccionComercial: "",
+  comunaComercial: "",
+  ciudadComercial: "",
+  direccionEntregaCarga: "",
+  comunaEntregaCarga: "",
+  ciudadEntregaCarga: "",
+  direccionEntregaDoctos: "",
+  comunaEntregaDoctos: "",
+  ciudadEntregaDoctos: "",
+
+  // Contabilidad
+  nombreResponsableContabilidad: "",
+  cargoContabilidad: "",
+  emailContabilidad: "",
+  celularContabilidad: "",
+  fonoContabilidad: "",
+  faxContabilidad: "",
+  comexExportaciones: "",
+  cargoComex: "",
+  gerenteComercial: "",
+  emailGerente: "",
+  fonoGerente: "",
+  faxGerente: "",
+
+  // Datos Solicitante
+  nombreSolicitante: "",
+  fechaSolicitud: "",
+  celularSolicitante: "",
+  website: "",
+};
 
 const NewClientForm = () => {
   const { t } = useTranslation();
+  const turnstileRef = useRef<TurnstileInstance>(null);
+  const formLoadedAt = useRef(Date.now());
 
   useEffect(() => {
     AOS.init({
@@ -27,47 +75,8 @@ const NewClientForm = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [formData, setFormData] = useState({
-    // Datos Principales
-    rut: "",
-    razonSocial: "",
-    nombreFantasia: "",
-    representanteLegal: "",
-    rutRepresentante: "",
-    giro: "",
-    formaPago: "",
-    plazo: "",
-
-    // Direcciones
-    direccionComercial: "",
-    comunaComercial: "",
-    ciudadComercial: "",
-    direccionEntregaCarga: "",
-    comunaEntregaCarga: "",
-    ciudadEntregaCarga: "",
-    direccionEntregaDoctos: "",
-    comunaEntregaDoctos: "",
-    ciudadEntregaDoctos: "",
-
-    // Contabilidad
-    nombreResponsableContabilidad: "",
-    cargoContabilidad: "",
-    emailContabilidad: "",
-    celularContabilidad: "",
-    fonoContabilidad: "",
-    faxContabilidad: "",
-    comexExportaciones: "",
-    cargoComex: "",
-    gerenteComercial: "",
-    emailGerente: "",
-    fonoGerente: "",
-    faxGerente: "",
-
-    // Datos Solicitante
-    nombreSolicitante: "",
-    fechaSolicitud: "",
-    celularSolicitante: "",
-  });
+  const [formData, setFormData] = useState(emptyForm);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<
@@ -102,13 +111,29 @@ const NewClientForm = () => {
     setSubmitStatus("idle");
     setErrorMessage("");
 
+    if (!turnstileToken) {
+      setIsSubmitting(false);
+      setSubmitStatus("error");
+      setErrorMessage(
+        t(
+          "newClientForm.captchaRequired",
+          "Completa la verificación de seguridad.",
+        ),
+      );
+      return;
+    }
+
     try {
       const response = await fetch("/api/send-new-client", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          turnstileToken,
+          formLoadedAt: formLoadedAt.current,
+        }),
       });
 
       const data = await parseApiResponse(response);
@@ -116,43 +141,15 @@ const NewClientForm = () => {
       if (response.ok && data.success) {
         setIsSubmitting(false);
         setSubmitStatus("success");
-        setFormData({
-          rut: "",
-          razonSocial: "",
-          nombreFantasia: "",
-          representanteLegal: "",
-          rutRepresentante: "",
-          giro: "",
-          formaPago: "",
-          plazo: "",
-          direccionComercial: "",
-          comunaComercial: "",
-          ciudadComercial: "",
-          direccionEntregaCarga: "",
-          comunaEntregaCarga: "",
-          ciudadEntregaCarga: "",
-          direccionEntregaDoctos: "",
-          comunaEntregaDoctos: "",
-          ciudadEntregaDoctos: "",
-          nombreResponsableContabilidad: "",
-          cargoContabilidad: "",
-          emailContabilidad: "",
-          celularContabilidad: "",
-          fonoContabilidad: "",
-          faxContabilidad: "",
-          comexExportaciones: "",
-          cargoComex: "",
-          gerenteComercial: "",
-          emailGerente: "",
-          fonoGerente: "",
-          faxGerente: "",
-          nombreSolicitante: "",
-          fechaSolicitud: "",
-          celularSolicitante: "",
-        });
+        setFormData(emptyForm);
+        setTurnstileToken(null);
+        turnstileRef.current?.reset();
+        formLoadedAt.current = Date.now();
 
         setTimeout(() => setSubmitStatus("idle"), 8000);
       } else {
+        turnstileRef.current?.reset();
+        setTurnstileToken(null);
         throw new Error(
           (typeof data.error === "string" && data.error) ||
           "Error al enviar el formulario",
@@ -253,6 +250,29 @@ const NewClientForm = () => {
           <div className="row justify-content-center">
             <div className="col-lg-10">
               <form onSubmit={handleSubmit}>
+                <div
+                  aria-hidden="true"
+                  style={{
+                    position: "absolute",
+                    left: "-10000px",
+                    top: "auto",
+                    width: "1px",
+                    height: "1px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <label htmlFor="new-client-website">Website</label>
+                  <input
+                    type="text"
+                    id="new-client-website"
+                    name="website"
+                    value={formData.website}
+                    onChange={handleChange}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </div>
+
                 {/* DATOS PRINCIPALES */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -984,16 +1004,29 @@ const NewClientForm = () => {
                   transition={{ delay: 0.5 }}
                   className="text-center mt-4"
                 >
+                  {TURNSTILE_SITE_KEY ? (
+                    <div className="d-flex justify-content-center mb-4">
+                      <Turnstile
+                        ref={turnstileRef}
+                        siteKey={TURNSTILE_SITE_KEY}
+                        onSuccess={(token) => setTurnstileToken(token)}
+                        onError={() => setTurnstileToken(null)}
+                        onExpire={() => setTurnstileToken(null)}
+                        options={{ theme: "light" }}
+                      />
+                    </div>
+                  ) : null}
+
                   <button
                     type="submit"
-                    disabled={isSubmitting}
+                    disabled={isSubmitting || !turnstileToken}
                     className="btn btn-danger btn-lg px-5 py-3 shadow-lg"
                     style={{
                       borderRadius: "12px",
                       fontSize: "1.1rem",
                       fontWeight: "600",
                       minWidth: "250px",
-                      background: isSubmitting
+                      background: isSubmitting || !turnstileToken
                         ? "#6c757d"
                         : "var(--primary-color)",
                       border: "none",

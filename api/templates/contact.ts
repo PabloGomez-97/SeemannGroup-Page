@@ -5,6 +5,14 @@ export interface ContactPayload {
   cargo?: string;
 }
 
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 const formatDate = () =>
   new Date().toLocaleString('es-CL', {
     timeZone: 'America/Santiago',
@@ -16,7 +24,10 @@ const formatDate = () =>
   });
 
 export function buildClientConfirmationHtml(data: ContactPayload): string {
-  const { nombre, telefono, correo, cargo } = data;
+  const nombre = escapeHtml(data.nombre);
+  const telefono = escapeHtml(data.telefono);
+  const correo = data.correo ? escapeHtml(data.correo) : undefined;
+  const cargo = data.cargo ? escapeHtml(data.cargo) : undefined;
 
   return `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

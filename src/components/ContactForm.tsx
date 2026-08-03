@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import AOS from "aos";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { parseApiResponse } from "../utils/parseApiResponse";
 import {
   Mail,
@@ -17,9 +18,13 @@ import {
   User,
 } from "lucide-react";
 
+const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY as string;
+
 const ContactForm = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const turnstileRef = useRef<TurnstileInstance>(null);
+  const formLoadedAt = useRef(Date.now());
 
   useEffect(() => {
     AOS.init({
@@ -33,7 +38,9 @@ const ContactForm = () => {
     phone: "",
     email: "",
     position: "",
+    website: "",
   });
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<
     "idle" | "success" | "error"
@@ -55,6 +62,18 @@ const ContactForm = () => {
     setSubmitStatus("idle");
     setErrorMessage("");
 
+    if (!turnstileToken) {
+      setIsSubmitting(false);
+      setSubmitStatus("error");
+      setErrorMessage(
+        t(
+          "contact.form.captchaRequired",
+          "Completa la verificación de seguridad.",
+        ),
+      );
+      return;
+    }
+
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
@@ -66,13 +85,19 @@ const ContactForm = () => {
           telefono: formData.phone,
           correo: formData.email || undefined,
           cargo: formData.position || undefined,
+          turnstileToken,
+          website: formData.website,
+          formLoadedAt: formLoadedAt.current,
         }),
       });
 
       const data = await parseApiResponse(response);
 
       if (response.ok && data.success) {
-        setFormData({ name: "", phone: "", email: "", position: "" });
+        setFormData({ name: "", phone: "", email: "", position: "", website: "" });
+        setTurnstileToken(null);
+        turnstileRef.current?.reset();
+        formLoadedAt.current = Date.now();
 
         // Push dataLayer event for GTM conversion tracking
         if (typeof window !== "undefined" && (window as any).dataLayer) {
@@ -85,6 +110,8 @@ const ContactForm = () => {
         // Redirect to thank you page
         navigate("/gracias");
       } else {
+        turnstileRef.current?.reset();
+        setTurnstileToken(null);
         throw new Error(
           (typeof data.error === "string" && data.error) ||
             "Error al enviar el formulario",
@@ -245,6 +272,29 @@ const ContactForm = () => {
                 )}
 
                 <form onSubmit={handleSubmit}>
+                  <div
+                    aria-hidden="true"
+                    style={{
+                      position: "absolute",
+                      left: "-10000px",
+                      top: "auto",
+                      width: "1px",
+                      height: "1px",
+                      overflow: "hidden",
+                    }}
+                  >
+                    <label htmlFor="contact-website">Website</label>
+                    <input
+                      type="text"
+                      id="contact-website"
+                      name="website"
+                      value={formData.website}
+                      onChange={handleChange}
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
+                  </div>
+
                   <div className="mb-3">
                     <label className="form-label">
                       <User size={18} className="me-2" />
@@ -299,7 +349,7 @@ const ContactForm = () => {
                     />
                   </div>
 
-                  <div className="mb-4">
+                  <div className="mb-3">
                     <label className="form-label">
                       <User size={18} className="me-2" />
                       {t("contact.form.position", "Cargo")} (
@@ -318,10 +368,23 @@ const ContactForm = () => {
                     />
                   </div>
 
+                  {TURNSTILE_SITE_KEY ? (
+                    <div className="mb-4">
+                      <Turnstile
+                        ref={turnstileRef}
+                        siteKey={TURNSTILE_SITE_KEY}
+                        onSuccess={(token) => setTurnstileToken(token)}
+                        onError={() => setTurnstileToken(null)}
+                        onExpire={() => setTurnstileToken(null)}
+                        options={{ theme: "light" }}
+                      />
+                    </div>
+                  ) : null}
+
                   <motion.button
                     type="submit"
                     className="btn btn-primary btn-lg w-100"
-                    disabled={isSubmitting}
+                    disabled={isSubmitting || !turnstileToken}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
